@@ -1,16 +1,22 @@
 import React from "react"
-import { Link } from "gatsby"
+import styled from 'styled-components'
 
 import SEO from "components/seo"
+import Layout from "components/layout"
+
+import PageTitle from 'components/pageTitle'
+
+const Wrapper = styled.div`
+  height: 100%;
+`
 
 const IndexPage = () => (
-  <div>
+  <Wrapper>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
+    <Layout>
+      <PageTitle />
+    </Layout>
+  </Wrapper>
 )
 
 export default IndexPage
