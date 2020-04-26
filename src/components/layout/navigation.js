@@ -1,19 +1,50 @@
 import React from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-const Navi = styled.p`
-    background-color: blue;
-    border: 1px solid green;
-    width: 150px;
+import { Link } from 'gatsby'
+
+import Container from 'base/container'
+import Flex from 'base/flex'
+
+const Navi = styled(Flex)`
     height: 20px;
+    width: 320px;
+    border-bottom: 2px solid ${p => p.theme.color.secondary};
+    padding-right: 27px;
+
+    @media (${p => p.theme.media.small}) {
+        width: 100%
+    }
+`
+
+const NavigationItem = styled(Flex)`
+    width: 70px;
+    text-align: end;
+`
+
+const NavigationLink = styled(Link)`
+    color: ${p => p.theme.color.primary};
+    font-weight: 700;
+    text-decoration: none;
 `
 
 const Navigation = () => {
     
     return (
-        <Navi>
-            Aloha
-        </Navi>
+        <Navi align="flex-end">
+            <Container justifyContent="flex-end">
+                <NavigationItem>
+                    <NavigationLink>
+                        About Me
+                    </NavigationLink>
+                </NavigationItem>
+                <NavigationItem>
+                    <NavigationLink>
+                        Blog
+                    </NavigationLink>
+                </NavigationItem>
+            </Container>
+        </Navi>  
     )
     
 }

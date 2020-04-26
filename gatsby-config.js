@@ -9,12 +9,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-root-import',
+      resolve: "gatsby-plugin-root-import",
       options: {
-        src: path.join(__dirname, 'src'),
-        components: path.join(__dirname, 'src/components'),
-        pages: path.join(__dirname, 'src/pages')
-      }
+        src: path.join(__dirname, "src"),
+        components: path.join(__dirname, "src/components"),
+        base: path.join(__dirname, "src/components/base"),
+        typography: path.join(__dirname, "src/components/typography"),
+        pages: path.join(__dirname, "src/pages"),
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
