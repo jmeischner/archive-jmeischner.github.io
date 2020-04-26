@@ -18,6 +18,9 @@
             ],
             "pages/*": [
                 "src/pages/*"
+            ],
+            "assets/*": [
+                "src/images/assets/*"
             ]
         }
     },

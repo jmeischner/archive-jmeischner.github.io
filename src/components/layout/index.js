@@ -8,7 +8,6 @@ import Navigation from './navigation'
 import Main from './main'
 import Footer from './footer'
 
-import './layout.css'
 import theme from './theme';
 
 const LayoutContainer = styled(Container)`

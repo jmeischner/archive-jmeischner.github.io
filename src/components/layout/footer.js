@@ -6,6 +6,11 @@ import Flex from "base/flex"
 
 import H3 from 'typography/h3'
 
+import ProfilePicture from './profilepicture'
+import Github from 'assets/icons/github.svg'
+import LinkedIn from "assets/icons/linkedin.svg"
+import Xing from "assets/icons/xing.svg"
+
 const AboutMe = styled(Flex)`
   width: 100%;
   border-top: 2px solid ${p => p.theme.color.secondary};
@@ -25,20 +30,15 @@ const IconBar = styled(Flex)`
   }
 `
 
-const MePic = styled.div`
-  background-image: url('/me.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  height: 125px;
-  margin: 10px;
-  width: 100px;
-`
-
 const AboutMeText = styled.p`
   font-weight: 300;
   font-size: 14px;
+  margin: 0 1em;
+`
+
+const BottomAboutMeContainer = styled(Container)`
+  margin-top: 20px;
+  margin-left: 5px;
 `
 
 const Footer = () => {
@@ -53,22 +53,34 @@ const Footer = () => {
                   <H3>About Me</H3>
                 </Flex>
                 <IconBar>
-                  <a href="https://github.com/jmeischner">
-                    <img src="/icons/github@3x.png" alt="github icon" />
+                  <a
+                    href="https://github.com/jmeischner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github />
                   </a>
-                  <a href="https://www.linkedin.com/in/jmeischner">
-                    <img src="/icons/linkedin@3x.png" alt="linkedin icon" />
+                  <a
+                    href="https://www.linkedin.com/in/jmeischner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <LinkedIn />
                   </a>
-                  <a href="https://www.xing.com/profile/Jan_Meischner">
-                    <img src="/icons/xing@3x.png" alt="xing icon" />
+                  <a
+                    href="https://www.xing.com/profile/Jan_Meischner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Xing />
                   </a>
                 </IconBar>
               </Container>
             </Flex>
             <Flex>
-              <Container>
+              <BottomAboutMeContainer>
                 <Flex>
-                  <MePic />
+                  <ProfilePicture />
                 </Flex>
                 <Flex>
                   <AboutMeText>
@@ -82,7 +94,7 @@ const Footer = () => {
                     cubilia pharetra lobortis.
                   </AboutMeText>
                 </Flex>
-              </Container>
+              </BottomAboutMeContainer>
             </Flex>
           </Container>
         </AboutMe>
