@@ -25,6 +25,7 @@ const AboutMe = styled(Flex)`
 
   @media (${p => p.theme.media.small}) {
     border-left: 0;
+    border-bottom: 2px solid ${p => p.theme.color.secondary};
     border-radius: 0;
   }
 `
