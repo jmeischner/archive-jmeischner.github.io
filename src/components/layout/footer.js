@@ -11,12 +11,22 @@ import Github from 'assets/icons/github.svg'
 import LinkedIn from "assets/icons/linkedin.svg"
 import Xing from "assets/icons/xing.svg"
 
+const FooterContainer = styled(Flex)`
+  margin-top: auto;
+  margin-bottom: 10px;
+`
+
 const AboutMe = styled(Flex)`
   width: 100%;
   border-top: 2px solid ${p => p.theme.color.secondary};
   border-left: 2px solid ${p => p.theme.color.secondary};
   padding: 10px 25px;
   border-radius: 10px;
+
+  @media (${p => p.theme.media.small}) {
+    border-left: 0;
+    border-radius: 0;
+  }
 `
 
 const IconBar = styled(Flex)`
@@ -42,7 +52,8 @@ const BottomAboutMeContainer = styled(Container)`
 `
 
 const Footer = () => {
-    return (
+  return (
+    <FooterContainer>
       <Container>
         <Flex width="2" grow="0"></Flex>
         <AboutMe grow="10">
@@ -99,7 +110,8 @@ const Footer = () => {
           </Container>
         </AboutMe>
       </Container>
-    )
+    </FooterContainer>
+  )
 }
 
 export default Footer

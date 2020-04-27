@@ -11,6 +11,7 @@ const Navi = styled(Flex)`
     width: 320px;
     border-bottom: 2px solid ${p => p.theme.color.secondary};
     padding-right: 27px;
+    margin-top: 20px;
 
     @media (${p => p.theme.media.small}) {
         width: 100%

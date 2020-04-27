@@ -9,13 +9,14 @@ import Main from './main'
 import Footer from './footer'
 
 import theme from './theme';
+import './layout.css';
 
 const LayoutContainer = styled(Container)`
     max-width: 960px;
     height: 100%;
     font-family: ${ props => props.theme.fontFamily };
     color: ${ props => props.theme.color.primary };
-    margin: auto;
+    margin: 0 auto;
 `
 
 const Layout = ({ children }) => {
