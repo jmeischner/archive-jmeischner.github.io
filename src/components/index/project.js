@@ -9,7 +9,13 @@ const Project = styled(Flex)`
   margin: auto;
   margin-bottom: 10px;
   padding: 20px;
-  width: 220px;
+  max-width: 220px;
+
+  @media (${p => p.theme.media.small}) {
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+  }
 `
 
 export default Project;

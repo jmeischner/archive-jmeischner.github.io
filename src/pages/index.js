@@ -31,9 +31,9 @@ const IndexPage = () => (
           </Container>
         </Flex>
         <Flex>
-          <Container id="main">
+          <Container id="main" justifyContent="space-between" wrap="wrap">
             <Flex width="2" />
-            <MainArea width="7">
+            <MainArea width="6" grow="6">
               <p class="summary">
                 This Blog contains stories I experienced and lessons I learned
                 during daily work and while creating new ideas and projects.
@@ -41,7 +41,7 @@ const IndexPage = () => (
                 happy if it will help someone to solve her own challenges.
               </p>
             </MainArea>
-            <Projects grow="3">
+            <Projects width="3" grow="3">
               <H3>My Projects</H3>
               <ProjectListItem
                 title="alfred-bear"
