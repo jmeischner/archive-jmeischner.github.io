@@ -24,9 +24,11 @@ const NavigationItem = styled(Flex)`
 `
 
 const NavigationLink = styled(Link)`
-    color: ${p => p.theme.color.primary};
-    font-weight: 700;
-    text-decoration: none;
+    span {
+        color: ${p => p.theme.color.primary};
+        font-weight: 700;
+        text-decoration: none;
+    }
 `
 
 const Navigation = () => {
@@ -36,12 +38,16 @@ const Navigation = () => {
             <Container justifyContent="flex-end">
                 <NavigationItem>
                     <NavigationLink>
-                        About Me
+                        <span>
+                            About Me
+                        </span>
                     </NavigationLink>
                 </NavigationItem>
                 <NavigationItem>
                     <NavigationLink>
-                        Blog
+                        <span>
+                            Blog
+                        </span>
                     </NavigationLink>
                 </NavigationItem>
             </Container>
