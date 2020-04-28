@@ -13,15 +13,15 @@ import Xing from "assets/icons/xing.svg"
 
 const FooterContainer = styled(Flex)`
   margin-top: auto;
-  margin-bottom: 10px;
 `
 
 const AboutMe = styled(Flex)`
-  width: 100%;
-  border-top: 2px solid ${p => p.theme.color.secondary};
   border-left: 2px solid ${p => p.theme.color.secondary};
-  padding: 10px 25px;
   border-radius: 10px;
+  border-top: 2px solid ${p => p.theme.color.secondary};
+  margin-bottom: 10px;
+  padding: 10px 25px;
+  width: 100%;
 
   @media (${p => p.theme.media.small}) {
     border-left: 0;
@@ -96,14 +96,18 @@ const Footer = () => {
                 </Flex>
                 <Flex>
                   <AboutMeText>
-                    Sodales eu vel turpis cursus diam nec ornare in et consequat
-                    augue, ante venenatis tempus erat semper interdum maximus
-                    himenaeos rhoncus quis, accumsan per tristique cubilia quam
-                    ullamcorper montes senectus urna fames. Cursus eget sagittis
-                    suscipit donec risus habitant erat efficitur sit mi, iaculis
-                    nascetur vulputate fermentum rutrum turpis sodales facilisi
-                    varius, hendrerit tellus fringilla maecenas natoque nullam
-                    cubilia pharetra lobortis.
+                    My name is Jan Meischner and I'm a software developer
+                    located in Berlin (germany). I'm interested in all the things
+                    around development: design, frontend, backend, architecture
+                    and devops topics. I try to make use of every chance I get
+                    to learn new things. One of my passions is improving
+                    productivity by using the right working techniques and
+                    tools. I'm a big fan of Scrum and GTD.
+                    <p>
+                      Currently I work at{" "}
+                      <a href="https://verimi.de/de">Verimi</a> as a frontend
+                      and backend developer and devops deputy.
+                    </p>
                   </AboutMeText>
                 </Flex>
               </BottomAboutMeContainer>

@@ -12,11 +12,18 @@ import theme from './theme';
 import './layout.css';
 
 const LayoutContainer = styled(Container)`
-    max-width: 960px;
-    height: 100%;
-    font-family: ${ props => props.theme.fontFamily };
-    color: ${ props => props.theme.color.primary };
-    margin: 0 auto;
+  max-width: 960px;
+  height: 100%;
+  font-family: ${props => props.theme.fontFamily};
+  color: ${props => props.theme.color.primary};
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+    color: ${p => p.theme.color.secondary};
+  }
 `
 
 const Layout = ({ children }) => {
