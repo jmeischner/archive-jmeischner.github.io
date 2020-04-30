@@ -17,6 +17,12 @@ const Wrapper = styled.div`
   height: 100%;
 `
 
+const ContentContainer = styled(Container)`
+  @media(${ p => p.theme.media.small }) {
+    flex-wrap: wrap;
+  }
+`
+
 const IndexPage = () => (
   <Wrapper>
     <SEO title="Home" />
@@ -25,15 +31,15 @@ const IndexPage = () => (
         <Flex>
           <Container direction="row">
             <Flex grow="1" width="1"></Flex>
-            <Flex grow="11">
+            <Flex grow="11" style={{width: "100%"}}>
               <PageTitle />
             </Flex>
           </Container>
         </Flex>
         <Flex>
-          <Container id="main" justifyContent="space-between" wrap="wrap">
-            <Flex width="2" />
-            <MainArea width="6" grow="6">
+          <ContentContainer id="main" justifyContent="space-between">
+            <Flex width="2" shrink="1"/>
+            <MainArea width="5" shrink="1">
               <p class="summary">
                 This Blog contains stories I experienced and lessons I learned
                 during daily work and while creating new ideas and projects.
@@ -41,7 +47,7 @@ const IndexPage = () => (
                 happy if it will help someone to solve her own challenges.
               </p>
             </MainArea>
-            <Projects width="3" grow="3">
+            <Projects>
               <H3>My Projects</H3>
               <ProjectListItem
                 title="alfred-bear"
@@ -83,7 +89,7 @@ const IndexPage = () => (
                 Framework
               </ProjectListItem>
             </Projects>
-          </Container>
+          </ContentContainer>
         </Flex>
       </Container>
     </Layout>
