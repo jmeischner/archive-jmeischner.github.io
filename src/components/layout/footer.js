@@ -56,8 +56,8 @@ const Footer = () => {
   return (
     <FooterContainer>
       <Container>
-        <Flex width="2" grow="0"></Flex>
-        <AboutMe grow="10">
+        <Flex width="2" grow="1"></Flex>
+        <AboutMe grow="1">
           <Container direction="column">
             <Flex>
               <Container alignItems="flex-start" justifyContent="space-between">
@@ -104,9 +104,9 @@ const Footer = () => {
                     productivity by using the right working techniques and
                     tools. I'm a big fan of Scrum and GTD.
                     <p>
-                      Currently I work at{" "}
+                      I work at{" "}
                       <a href="https://verimi.de/de">Verimi</a> as a frontend
-                      and backend developer and devops deputy.
+                      and backend developer and as devops deputy.
                     </p>
                   </AboutMeText>
                 </Flex>
