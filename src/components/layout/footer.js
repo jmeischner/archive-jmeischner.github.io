@@ -42,7 +42,7 @@ const IconBar = styled(Flex)`
 `
 
 const AboutMeText = styled.p`
-  font-weight: 300;
+  font-weight: ${p => p.theme.zilla.light};
   font-size: 14px;
   margin: 0 1em;
 `

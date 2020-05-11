@@ -20,7 +20,7 @@ const LayoutContainer = styled(Container)`
 
   a {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: ${p => p.theme.zilla.semibold};
     font-style: italic;
     color: ${p => p.theme.color.secondary};
   }

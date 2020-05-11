@@ -8,6 +8,18 @@ const theme = {
     primary: "#343838",
     secondary: "#FF9900",
   },
+  zilla: {
+    light: 300,
+    regular: 400,
+    semibold: 600,
+    bold: 700
+  },
+  fontSize: {
+    h1: "24px",
+    h2: "18px",
+    h3: "21px",
+    p: "14px"
+  },
   breakpoint: {
     small: small,
     medium: medium,

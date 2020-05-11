@@ -8,7 +8,7 @@ const ItemTitle = styled(Flex)`
   color: ${p => p.theme.color.secondary};
   font-size: 18px;
   font-style: italic;
-  font-weight: 600;
+  font-weight: ${p => p.theme.zilla.semibold};
   letter-spacing: 0.77px;
   text-align: left;
   margin-bottom: 10px;
@@ -19,7 +19,7 @@ const ItemTitle = styled(Flex)`
 `
 
 const ItemDate = styled(Flex)`
-  font-weight: 300;
+  font-weight: ${p => p.theme.zilla.light};
   font-style: italic;
   font-size: 12px;
   letter-spacing: 0.66px;
@@ -30,12 +30,12 @@ const ItemExcerpt = styled(Flex)`
   text-align: left;
   margin-bottom: 10px;
   margin-left: 10px;
-  font-weight: 400;
+  font-weight: ${p => p.theme.zilla.regular};
   font-size: 14px;
   letter-spacing: 0.77px;
 
   @media (${p => p.theme.media.small}) {
-    font-weight: 300;
+    font-weight: ${p => p.theme.zilla.light};
     font-size: 12px;
     letter-spacing: 0.66px;
     margin-left: 0;

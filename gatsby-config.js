@@ -33,7 +33,23 @@ module.exports = {
         path: `${__dirname}/articles`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: {
+                default: "Ayu Light",
+                dark: "Ayu Dark"
+              },
+              extensions: [path.join(__dirname, "/ayu.vsix")]
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {

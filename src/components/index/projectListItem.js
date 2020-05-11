@@ -11,7 +11,7 @@ const ProjectListItemWrapper = styled.div`
   margin: 15px 0;
 
   p {
-    font-weight: 300;
+    font-weight: ${p => p.theme.zilla.light};
     font-size: 13px;
     color: ${p => p.theme.color.primary};
     letter-spacing: 0.66px;
@@ -23,7 +23,7 @@ const ProjectListItemTitle = styled(Flex)`
     color: ${p => p.theme.color.secondary};
     font-size: 14px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: ${p => p.theme.zilla.semibold};
     letter-spacing: 0.77px;
     text-align: left;
 `

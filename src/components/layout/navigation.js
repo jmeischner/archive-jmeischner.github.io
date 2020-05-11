@@ -26,7 +26,7 @@ const NavigationItem = styled(Flex)`
 const NavigationLink = styled(Link)`
     span {
         color: ${p => p.theme.color.primary};
-        font-weight: 700;
+        font-weight: ${p => p.theme.zilla.bold};
         text-decoration: none;
     }
 `

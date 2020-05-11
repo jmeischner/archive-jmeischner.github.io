@@ -1,15 +1,65 @@
 import React from "react"
+import styled from "styled-components"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
+
+import Layout from "components/layout"
+import SEO from 'components/seo'
+import ContentContainer from "components/layout/contentContainer"
+import PageTitle from "base/pageTitle"
+import MainArea from 'components/layout/mainArea'
+
+import Flex from 'base/flex'
+import Container from 'base/container'
+
+import "gatsby-remark-vscode/styles.css"
+
+const PostTitle = styled.h1`
+  font-size: ${p => p.theme.fontSize.h1 };
+  color: ${p => p.theme.color.secondary };
+  font-weight: ${p => p.theme.zilla.semibold};
+  font-style: italic;
+  `
+
+const PostBody = styled.div`
+  p:first-of-type {
+    font-size: ${p => p.theme.fontSize.p};
+    font-weight: ${p => p.theme.zilla.semibold};
+    padding-bottom: 30px;
+  }
+
+  p {
+    font-weight: ${p => p.theme.zilla.regular};
+    font-size: ${p => p.theme.fontSize.p};
+  }
+
+  h2 {
+    font-size: ${p => p.theme.fontSize.h2};
+    font-weight: ${p => p.theme.zilla.semibold};
+    font-style: italic;
+  }
+
+  .grvsc-line {
+    line-height: 1.3rem;
+  }
+`
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      <SEO title={post.frontmatter.title} />
+      <Container direction="column">
+        <PageTitle />
+        <Flex>
+          <ContentContainer id="main" justifyContent="space-between">
+            <Flex width="2" grow="0" />
+            <MainArea width="10" grow="1">
+                <PostTitle>{post.frontmatter.title}</PostTitle>
+                <PostBody dangerouslySetInnerHTML={{ __html: post.html }} />
+            </MainArea>
+          </ContentContainer>
+        </Flex>
+      </Container>
     </Layout>
   )
 }
