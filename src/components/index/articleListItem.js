@@ -6,7 +6,7 @@ import Flex from 'base/flex'
 
 const ItemTitle = styled(Flex)`
   color: ${p => p.theme.color.secondary};
-  font-size: 18px;
+  font-size: ${p => p.theme.fontSize.h2 };
   font-style: italic;
   font-weight: ${p => p.theme.zilla.semibold};
   letter-spacing: 0.77px;
@@ -21,7 +21,7 @@ const ItemTitle = styled(Flex)`
 const ItemDate = styled(Flex)`
   font-weight: ${p => p.theme.zilla.light};
   font-style: italic;
-  font-size: 12px;
+  font-size: ${p => p.theme.fontSize.xsm};
   letter-spacing: 0.66px;
   text-align: right;
 `
@@ -30,13 +30,13 @@ const ItemExcerpt = styled(Flex)`
   text-align: left;
   margin-bottom: 10px;
   margin-left: 10px;
-  font-weight: ${p => p.theme.zilla.regular};
-  font-size: 14px;
-  letter-spacing: 0.77px;
+  font-weight: ${p => p.theme.zilla.light};
+  font-size: ${p => p.theme.fontSize.sm};
+  letter-spacing: 0.67px;
 
   @media (${p => p.theme.media.small}) {
     font-weight: ${p => p.theme.zilla.light};
-    font-size: 12px;
+    font-size: ${p => p.theme.fontSize.sm};
     letter-spacing: 0.66px;
     margin-left: 0;
   }

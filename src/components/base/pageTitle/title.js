@@ -25,7 +25,7 @@ const MainHeading = styled(Flex)`
   letter-spacing: 3.28px;
   margin: 0 10px;
   text-align: left;
-  text-shadow: 0 1px 5px #ff9900;
+  text-shadow: 0 1px 5px ${p => p.theme.color.secondary};
 
   @media (${p => p.theme.media.small}) {
     font-size: 30px;

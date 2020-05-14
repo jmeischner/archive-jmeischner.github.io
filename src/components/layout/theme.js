@@ -18,7 +18,10 @@ const theme = {
     h1: "24px",
     h2: "18px",
     h3: "21px",
-    p: "14px"
+    p: "18px",
+    s: "16px",
+    sm: "14px",
+    xsm: "12px"
   },
   breakpoint: {
     small: small,
