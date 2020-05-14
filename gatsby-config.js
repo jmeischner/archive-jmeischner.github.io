@@ -42,9 +42,9 @@ module.exports = {
             options: {
               theme: {
                 default: "Ayu Light",
-                dark: "Ayu Dark"
+                dark: "Ayu Dark",
               },
-              extensions: [path.join(__dirname, "/ayu.vsix")]
+              extensions: [path.join(__dirname, "/ayu.vsix")],
             },
           },
         ],
@@ -60,5 +60,6 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-styled-components`,
   ],
 }
