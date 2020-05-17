@@ -19,7 +19,7 @@ import Summary from "components/index/summary"
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Blog of Jan Meischner about Software Development and Productivity" />
       <Container direction="column">
         <PageTitle />
         <Flex>
@@ -103,7 +103,7 @@ export const query = graphql`
           }
           id
           timeToRead
-          excerpt(truncate: true, pruneLength: 350)
+          excerpt(truncate: true, pruneLength: 250)
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title

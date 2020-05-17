@@ -15,6 +15,7 @@ const Subheading = styled(Flex)`
   @media (${p => p.theme.media.small}) {
     font-size: 12px;
     margin-bottom: 5px;
+    display: none;
   }
 `
 
@@ -28,7 +29,9 @@ const MainHeading = styled(Flex)`
   text-shadow: 0 1px 5px ${p => p.theme.color.secondary};
 
   @media (${p => p.theme.media.small}) {
-    font-size: 30px;
+    &:before {
+      content: "~/";
+    }
   }
 `
 
@@ -37,6 +40,10 @@ const HeadingContainer = styled(Container)`
     justify-content: center;
     margin-top: 5px;
     width: 100%;
+
+    /* &:before {
+      content: "My "
+    } */
   }
 `
 

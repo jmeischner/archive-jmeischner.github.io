@@ -24,14 +24,14 @@ const PostTitle = styled(Flex)`
 const PostBody = styled(Flex)`
 
   p:first-of-type {
-    font-size: ${p => p.theme.fontSize.p};
+    font-size: ${p => p.theme.fontSize.m};
     font-weight: ${p => p.theme.zilla.semibold};
     padding-bottom: 30px;
   }
 
   p {
     font-weight: ${p => p.theme.zilla.regular};
-    font-size: ${p => p.theme.fontSize.p};
+    font-size: ${p => p.theme.fontSize.m};
   }
 
   h2 {

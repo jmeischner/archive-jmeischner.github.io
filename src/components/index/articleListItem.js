@@ -14,7 +14,7 @@ const ItemTitle = styled(Flex)`
   margin-bottom: 10px;
 
   @media (${p => p.theme.media.small}) {
-    font-size: 14px;
+    font-size: ${p => p.theme.fontSize.h3};
   }
 `
 
@@ -24,6 +24,10 @@ const ItemDate = styled(Flex)`
   font-size: ${p => p.theme.fontSize.xsm};
   letter-spacing: 0.66px;
   text-align: right;
+
+  @media (${p => p.theme.media.small}) {
+    font-size: ${p => p.theme.fontSize.sm};
+  }
 `
 
 const ItemExcerpt = styled(Flex)`
@@ -36,7 +40,7 @@ const ItemExcerpt = styled(Flex)`
 
   @media (${p => p.theme.media.small}) {
     font-weight: ${p => p.theme.zilla.light};
-    font-size: ${p => p.theme.fontSize.sm};
+    font-size: ${p => p.theme.fontSize.s};
     letter-spacing: 0.66px;
     margin-left: 0;
   }
@@ -45,6 +49,10 @@ const ItemExcerpt = styled(Flex)`
 const ItemContainer = styled(Container)`
     border-bottom: 2px solid ${p => p.theme.color.secondary};
     margin-bottom: 20px;
+
+    @media (${p => p.theme.media.small}) {
+      margin-bottom: 35px;
+    }
 `
 
 export default ({ title, date, slug, children }) => {
