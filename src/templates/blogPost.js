@@ -22,7 +22,6 @@ const PostTitle = styled(Flex)`
   `
 
 const PostBody = styled(Flex)`
-
   p:first-of-type {
     font-size: ${p => p.theme.fontSize.m};
     font-weight: ${p => p.theme.zilla.semibold};
@@ -32,6 +31,9 @@ const PostBody = styled(Flex)`
   p {
     font-weight: ${p => p.theme.zilla.regular};
     font-size: ${p => p.theme.fontSize.m};
+    font-family: ZillaSlab-Regular;
+    letter-spacing: 0.58px;
+    word-spacing: 1px;
   }
 
   h2 {
@@ -45,11 +47,13 @@ const PostBody = styled(Flex)`
     width: 0;
   }
 
-  
   .grvsc-code {
     min-width: 0;
   }
-  
+
+  .inlineCode {
+    font-size: ${p => p.theme.fontSize.s};
+  }
 `
 
 export default ({ data }) => {

@@ -46,6 +46,9 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 992,
+              showCaptions: true,
+              markdownCaptions: true,
+              wrapperStyle: "margin: 15px 0;text-align:center;width:100%;"
             },
           },
           {
@@ -54,6 +57,11 @@ module.exports = {
               theme: {
                 default: "Ayu Light",
                 dark: "Ayu Dark",
+              },
+              inlineCode: {
+                marker: '·',
+                theme: "Ayu Light",
+                className: "inlineCode"
               },
               extensions: [path.join(__dirname, "/ayu.vsix")],
             },
