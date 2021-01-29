@@ -1,17 +1,16 @@
+import Container from 'base/container'
+import Flex from 'base/flex'
+import PageTitle from "base/pageTitle"
+import CommentsArea from 'components/base/commentsArea/commentsArea'
+import Layout from "components/layout"
+import ContentContainer from "components/layout/contentContainer"
+import MainArea from 'components/layout/mainArea'
+import SEO from 'components/seo'
+import { graphql } from 'gatsby'
+import "gatsby-remark-vscode/styles.css"
 import React from "react"
 import styled from "styled-components"
-import { graphql } from "gatsby"
 
-import Layout from "components/layout"
-import SEO from 'components/seo'
-import ContentContainer from "components/layout/contentContainer"
-import PageTitle from "base/pageTitle"
-import MainArea from 'components/layout/mainArea'
-
-import Flex from 'base/flex'
-import Container from 'base/container'
-
-import "gatsby-remark-vscode/styles.css"
 
 const PostTitle = styled(Flex)`
   margin-top: 30px;
@@ -58,6 +57,7 @@ const PostBody = styled(Flex)`
 
 export default ({ data }) => {
   const post = data.markdownRemark
+  const comments = data.allCommentsYaml
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
@@ -70,6 +70,7 @@ export default ({ data }) => {
               <Container direction="column">
                 <PostTitle>{post.frontmatter.title}</PostTitle>
                 <PostBody dangerouslySetInnerHTML={{ __html: post.html }} />
+                <CommentsArea slug={post.fields.slug} comments={comments} />
               </Container>
             </MainArea>
           </ContentContainer>
@@ -84,7 +85,24 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        title
+        title,
+      }
+      fields {
+        slug
+      }
+    }
+    allCommentsYaml (
+      sort: {fields: date, order: ASC},
+      filter: { slug: { eq: $slug } }
+    ) {
+      edges {
+        node {
+          _id
+          name
+          email
+          message
+          date
+        } 
       }
     }
   }

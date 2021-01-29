@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
+    'gatsby-transformer-yaml',
     {
       resolve: "gatsby-plugin-root-import",
       options: {
@@ -33,6 +34,13 @@ module.exports = {
       options: {
         name: `articles`,
         path: `${__dirname}/articles`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/_data/comments`,
+        name: 'comments',
       },
     },
     {

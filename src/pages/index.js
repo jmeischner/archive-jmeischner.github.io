@@ -1,20 +1,20 @@
-import React from "react"
-import { graphql } from "gatsby"
-
-import SEO from "components/seo"
-import Layout from "components/layout"
-import ContentContainer from 'components/layout/contentContainer'
-
 import Container from "base/container"
 import Flex from "base/flex"
 import PageTitle from "base/pageTitle"
-import H3 from "typography/h3"
-
+import ArticleListItem from "components/index/articleListItem"
 import Projects from "components/index/project"
 import ProjectListItem from "components/index/projectListItem"
-import MainArea from "components/layout/mainArea"
-import ArticleListItem from "components/index/articleListItem"
 import Summary from "components/index/summary"
+import Layout from "components/layout"
+import ContentContainer from 'components/layout/contentContainer'
+import MainArea from "components/layout/mainArea"
+import SEO from "components/seo"
+import { graphql } from "gatsby"
+import React from "react"
+import H3 from "typography/h3"
+
+
+
 
 const IndexPage = ({ data }) => {
   return (
@@ -106,7 +106,7 @@ export const query = graphql`
           excerpt(truncate: true, pruneLength: 250)
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
-            title
+            title,
           }
         }
       }

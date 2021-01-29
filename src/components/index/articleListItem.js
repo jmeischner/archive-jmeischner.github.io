@@ -1,8 +1,8 @@
+import Container from 'base/container'
+import Flex from 'base/flex'
 import React from 'react'
 import styled from 'styled-components'
 
-import Container from 'base/container'
-import Flex from 'base/flex'
 
 const ItemTitle = styled(Flex)`
   color: ${p => p.theme.color.secondary};
