@@ -1,7 +1,10 @@
-import Container from 'components/base/container'
-import { darken } from 'polished'
-import React from 'react'
-import styled from 'styled-components'
+import Container from 'components/base/container';
+import { darken } from 'polished';
+import React from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import styled from 'styled-components';
+import { BooleanParam, useQueryParam } from "use-query-params";
 
 const CommentFrom = styled(Container)`
     width: 100%;
@@ -76,17 +79,34 @@ const PrimaryButton = styled.button`
     }
 `
 
+const SuccessContainer = styled(ToastContainer).attrs({
+    toastClassName: 'toast',
+  })`  
+    .toast {
+      background-color: ${p => p.theme.color.secondary};
+    }
+  `;
+
 export default ({slug}) => {
+    const [addCommentSuccessfully, ] = useQueryParam('commentAdded', BooleanParam)
+
+    if (addCommentSuccessfully) {
+        toast.success("♥️ Thanks for the comment! I will publish it soon.")
+    }
+
     return (
-        <form method="POST" action="https://staticman-for-jmeischner.herokuapp.com/v2/entry/jmeischner/jmeischner.github.io/develop/comments">
-            <CommentFrom direction="column">
-                <input name="options[redirect]" type="hidden" value={"https://www.jmeischner.com" + slug} />
-                <input name="fields[slug]" type="hidden" value={ slug } />
-                <Input placeholder="Name" name="fields[name]" type="text" /><br />
-                <Textarea placeholder="Comment" name="fields[message]"></Textarea><br />
-                
-                <PrimaryButton type="submit">Add Comment</PrimaryButton>
-            </CommentFrom>
-        </form>
+        <div>
+            <form method="POST" action="https://staticman-for-jmeischner.herokuapp.com/v2/entry/jmeischner/jmeischner.github.io/develop/comments">
+                <CommentFrom direction="column">
+                    <input name="options[redirect]" type="hidden" value={"https://www.jmeischner.com" + slug + "?commentAdded=1"} />
+                    <input name="fields[slug]" type="hidden" value={ slug } />
+                    <Input placeholder="Name" name="fields[name]" type="text" /><br />
+                    <Textarea placeholder="Comment" name="fields[message]"></Textarea><br />
+                    
+                    <PrimaryButton type="submit">Add Comment</PrimaryButton>
+                </CommentFrom>
+            </form>
+            <SuccessContainer />
+        </div>
     )
 }
