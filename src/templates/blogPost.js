@@ -99,7 +99,6 @@ export const query = graphql`
         node {
           _id
           name
-          email
           message
           date
         } 
