@@ -29,7 +29,7 @@ export default ({ slug, comments }) => {
   
   return (
     <CommentsArea alignItems="center" direction="column">
-      <Title align="flex-start">Comments Area</Title>
+      <Title align="flex-start">Comment Area</Title>
       <Comments direction="column" justifyContent="center">
         {list}
         <NewComment slug={slug} />
