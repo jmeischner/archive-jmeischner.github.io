@@ -1,10 +1,10 @@
+import Container from 'base/container'
+import Flex from 'base/flex'
+import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 
-import { Link } from 'gatsby'
 
-import Container from 'base/container'
-import Flex from 'base/flex'
 
 const Navi = styled(Flex)`
     height: 20px;
@@ -44,7 +44,7 @@ const Navigation = () => {
                     </NavigationLink>
                 </NavigationItem>
                 <NavigationItem>
-                    <NavigationLink>
+                    <NavigationLink to="/">
                         <span>
                             Blog
                         </span>
