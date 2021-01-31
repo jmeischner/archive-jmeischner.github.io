@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => {
                 <ArticleListItem
                   title={node.frontmatter.title}
                   date={node.frontmatter.date}
-                  slug={node.fields.slug}
+                  slug={node.frontmatter.slug}
                 >
                   {node.excerpt}
                 </ArticleListItem>
@@ -98,15 +98,13 @@ export const query = graphql`
     allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       edges {
         node {
-          fields {
-            slug
-          }
           id
           timeToRead
           excerpt(truncate: true, pruneLength: 250)
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title,
+            slug
           }
         }
       }

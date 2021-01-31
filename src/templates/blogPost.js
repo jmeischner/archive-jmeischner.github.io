@@ -53,6 +53,10 @@ const PostBody = styled(Flex)`
   .inlineCode {
     font-size: ${p => p.theme.fontSize.s};
   }
+
+  code {
+    font-size: ${p => p.theme.fontSize.sm};
+  }
 `
 
 export default ({ data }) => {
@@ -70,7 +74,7 @@ export default ({ data }) => {
               <Container direction="column">
                 <PostTitle>{post.frontmatter.title}</PostTitle>
                 <PostBody dangerouslySetInnerHTML={{ __html: post.html }} />
-                <CommentsArea slug={post.fields.slug} comments={comments} />
+                <CommentsArea slug={post.frontmatter.slug} comments={comments} />
               </Container>
             </MainArea>
           </ContentContainer>
@@ -82,12 +86,10 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title,
-      }
-      fields {
         slug
       }
     }
