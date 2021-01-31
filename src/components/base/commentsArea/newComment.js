@@ -96,7 +96,7 @@ export default ({slug}) => {
 
     return (
         <div>
-            <form method="POST" action="https://staticman-for-jmeischner.herokuapp.com/v2/entry/jmeischner/jmeischner.github.io/develop/comments">
+            <form method="POST" action="https://commentarea-jmeischner.herokuapp.com/v2/entry/jmeischner/jmeischner.github.io/develop/comments">
                 <CommentFrom direction="column">
                     <input name="options[redirect]" type="hidden" value={"https://www.jmeischner.com" + slug + "?commentAdded=1"} />
                     <input name="fields[slug]" type="hidden" value={ slug } />
