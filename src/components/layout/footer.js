@@ -1,15 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
-
-import Container from 'base/container'
-import Flex from "base/flex"
-
-import H3 from 'typography/h3'
-
-import ProfilePicture from './profilepicture'
 import Github from 'assets/icons/github.svg'
 import LinkedIn from "assets/icons/linkedin.svg"
 import Xing from "assets/icons/xing.svg"
+import Container from 'base/container'
+import Flex from "base/flex"
+import React from 'react'
+import styled from 'styled-components'
+import H3 from 'typography/h3'
+import ProfilePicture from './profilepicture'
+
+
+
 
 const FooterContainer = styled(Flex)`
   margin-top: auto;
@@ -103,11 +103,6 @@ const Footer = () => {
                     to learn new things. One of my passions is improving
                     productivity by using the right working techniques and
                     tools. I'm a big fan of Scrum and GTD.
-                    <p>
-                      I work at{" "}
-                      <a href="https://verimi.de/de">Verimi</a> as a frontend
-                      and backend developer and as devops deputy.
-                    </p>
                   </AboutMeText>
                 </Flex>
               </BottomAboutMeContainer>
