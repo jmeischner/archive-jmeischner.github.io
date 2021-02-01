@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import styled from 'styled-components';
 import { BooleanParam, useQueryParam } from "use-query-params";
 
-const CommentFrom = styled(Container)`
+const CommentForm = styled(Container)`
     width: 100%;
     margin-top: 40px;
 `
@@ -97,14 +97,14 @@ export default ({slug}) => {
     return (
         <div>
             <form method="POST" action="https://commentarea-jmeischner.herokuapp.com/v2/entry/jmeischner/jmeischner.github.io/develop/comments">
-                <CommentFrom direction="column">
+                <CommentForm direction="column">
                     <input name="options[redirect]" type="hidden" value={"https://www.jmeischner.com" + slug + "?commentAdded=1"} />
                     <input name="fields[slug]" type="hidden" value={ slug } />
                     <Input placeholder="Name" name="fields[name]" type="text" /><br />
                     <Textarea placeholder="Comment" name="fields[message]"></Textarea><br />
                     
                     <PrimaryButton type="submit">Add Comment</PrimaryButton>
-                </CommentFrom>
+                </CommentForm>
             </form>
             <SuccessContainer />
         </div>
