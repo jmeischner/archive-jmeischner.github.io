@@ -56,7 +56,19 @@ So let’s add new comments to our blog post. It’s as simple as creating a sma
 
 The `redirect` field is used by Gatsby to redirect the user back to your page after the comment was added. I additionally added a query parameter to it, to display a *“Thank You”* toaster after the successful submit.
 
-The last step is to display the list of comments for the current blog post. Therefore, I added the *gatsby-transformer-yaml* plugin to the *gatsby-config.js *and an `allCommentsYaml` section to the `blogPost` template query:
+The last step is to display the list of comments for the current blog post. Therefore, I added the *gatsby-transformer-yaml* plugin to the *gatsby-config.js* including the filesystem configuration:
+
+```json
+{
+  resolve: 'gatsby-source-filesystem',
+  options: {
+    path: `${__dirname}/_data/comments`,
+    name: 'comments',
+  },
+}
+```
+
+and an `allCommentsYaml` section to the `blogPost` template query:
 
 ```json
     query($slug: String!) {
