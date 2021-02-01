@@ -2,6 +2,7 @@
 title: "How I created my own Blog"
 date: "2020-05-31"
 tags: ["projects"]
+slug: "how-i-created-my-own-blog"
 ---
 
 I've been playing with the idea of creating my own blog for a long time. I played with [ghost](https://ghost.org "ghost") a few years ago because I was some kind of [Node.js](https://nodejs.org/en/) enthusiast and wanted to try hosting this on my personal NAS. After I learned how easy it is to host a private page with Github I also tried Jekyll. With both approaches I felt uncomfortable creating my own theme. Additionally I wanted to use the whole blog project as something which I can build from scratch.

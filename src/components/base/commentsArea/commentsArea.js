@@ -23,7 +23,7 @@ const Comments = styled(Container)`
 
 export default ({ slug, comments }) => {
   
-  const list = comments.edges.map(c => (
+  const list = comments.map(c => (
     <Comment comment={c.node} />
   ))
   
