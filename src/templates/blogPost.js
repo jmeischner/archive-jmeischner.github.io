@@ -61,7 +61,7 @@ const PostBody = styled(Flex)`
 
 export default ({ data }) => {
   const post = data.markdownRemark
-  const comments = data.allCommentsYaml
+  const comments = data.allCommentsYaml.edges
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
