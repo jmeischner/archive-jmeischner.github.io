@@ -98,7 +98,7 @@ export default ({slug}) => {
         <div>
             <form method="POST" action="https://commentarea-jmeischner.herokuapp.com/v2/entry/jmeischner/jmeischner.github.io/develop/comments">
                 <CommentForm direction="column">
-                    <input name="options[redirect]" type="hidden" value={"https://www.jmeischner.com" + slug + "?commentAdded=1"} />
+                    <input name="options[redirect]" type="hidden" value={"https://www.jmeischner.com/" + slug + "?commentAdded=1"} />
                     <input name="fields[slug]" type="hidden" value={ slug } />
                     <Input placeholder="Name" name="fields[name]" type="text" /><br />
                     <Textarea placeholder="Comment" name="fields[message]"></Textarea><br />

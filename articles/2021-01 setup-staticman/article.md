@@ -42,13 +42,13 @@ So let’s add new comments to our blog post. It’s as simple as creating a sma
 ```html
 <form method="POST" action="https://{YOUR HEORKU APP NAME}.herokuapp.com/v2/entry/{GITHUB USERNAME}/{GITHUB REPOSITORY}/{BRANCH}}">
 	<CommentForm direction="column">
-    	<input name="options[redirect]" type="hidden" value={"https://{YOUR-DOMAIN}" + slug + "?commentAdded=1"} />
-        <input name="fields[slug]" type="hidden" value={ slug } />
-        <Input placeholder="Name" name="fields[name]" type="text" /><br />
-        <Textarea placeholder="Comment" name="fields[message]"></Textarea><br />
-                    
-        <PrimaryButton type="submit">Add Comment</PrimaryButton>
-    </CommentForm>
+    <input name="options[redirect]" type="hidden" value={"https://{YOUR-DOMAIN}/" + slug + "?commentAdded=1"} />
+    <input name="fields[slug]" type="hidden" value={ slug } />
+    <Input placeholder="Name" name="fields[name]" type="text" /><br />
+    <Textarea placeholder="Comment" name="fields[message]"></Textarea><br />
+                
+    <PrimaryButton type="submit">Add Comment</PrimaryButton>
+  </CommentForm>
 </form>
 ```
 
@@ -71,28 +71,28 @@ The last step is to display the list of comments for the current blog post. Ther
 and an `allCommentsYaml` section to the `blogPost` template query:
 
 ```json
-    query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title,
-        slug
-      }
-    }
-    allCommentsYaml (
-      sort: {fields: date, order: ASC},
-      filter: { slug: { eq: $slug } }
-    ) {
-      edges {
-        node {
-          _id
-          name
-          message
-          date
-        } 
-      }
+query($slug: String!) {
+  markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+    html
+    frontmatter {
+      title,
+      slug
     }
   }
+  allCommentsYaml (
+    sort: {fields: date, order: ASC},
+    filter: { slug: { eq: $slug } }
+  ) {
+    edges {
+      node {
+        _id
+        name
+        message
+        date
+      } 
+    }
+  }
+}
 ```
 
 In that way we get all our comments via `const comments = data.allCommentsYaml.edges` into our `blogPost` component. I created a list of comments via:
