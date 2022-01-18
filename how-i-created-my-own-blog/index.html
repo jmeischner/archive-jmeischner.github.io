@@ -1,0 +1,452 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.e2dfb228c8b057c4b1d7.css" id="gatsby-global-css">.Toastify__toast-container{z-index:9999;-webkit-transform:translateZ(9999px);position:fixed;padding:4px;width:320px;box-sizing:border-box;color:#fff}.Toastify__toast-container--top-left{top:1em;left:1em}.Toastify__toast-container--top-center{top:1em;left:50%;transform:translateX(-50%)}.Toastify__toast-container--top-right{top:1em;right:1em}.Toastify__toast-container--bottom-left{bottom:1em;left:1em}.Toastify__toast-container--bottom-center{bottom:1em;left:50%;transform:translateX(-50%)}.Toastify__toast-container--bottom-right{bottom:1em;right:1em}@media only screen and (max-width:480px){.Toastify__toast-container{width:100vw;padding:0;left:0;margin:0}.Toastify__toast-container--top-center,.Toastify__toast-container--top-left,.Toastify__toast-container--top-right{top:0;transform:translateX(0)}.Toastify__toast-container--bottom-center,.Toastify__toast-container--bottom-left,.Toastify__toast-container--bottom-right{bottom:0;transform:translateX(0)}.Toastify__toast-container--rtl{right:0;left:auto}}.Toastify__toast{position:relative;min-height:64px;box-sizing:border-box;margin-bottom:1rem;padding:8px;border-radius:4px;box-shadow:0 1px 10px 0 rgba(0,0,0,.1),0 2px 15px 0 rgba(0,0,0,.05);display:flex;justify-content:space-between;max-height:800px;overflow:hidden;font-family:sans-serif;cursor:pointer;direction:ltr}.Toastify__toast--rtl{direction:rtl}.Toastify__toast--dark{background:#121212;color:#fff}.Toastify__toast--default{background:#fff;color:#aaa}.Toastify__toast--info{background:#3498db}.Toastify__toast--success{background:#07bc0c}.Toastify__toast--warning{background:#f1c40f}.Toastify__toast--error{background:#e74c3c}.Toastify__toast-body{margin:auto 0;padding:6px}.Toastify--animate{animation-fill-mode:both;animation-duration:.7s}@media only screen and (max-width:480px){.Toastify__toast{margin-bottom:0}}.Toastify__close-button{color:#fff;background:transparent;outline:none;border:none;padding:0;cursor:pointer;opacity:.7;transition:.3s ease;align-self:flex-start}.Toastify__close-button--default{color:#000;opacity:.3}.Toastify__close-button>svg{fill:currentColor;height:16px;width:14px}.Toastify__close-button:focus,.Toastify__close-button:hover{opacity:1}@keyframes Toastify__trackProgress{0%{transform:scaleX(1)}to{transform:scaleX(0)}}.Toastify__progress-bar{position:absolute;bottom:0;left:0;width:100%;height:5px;z-index:9999;opacity:.7;background-color:hsla(0,0%,100%,.7);transform-origin:left}.Toastify__progress-bar--animated{animation:Toastify__trackProgress linear 1 forwards}.Toastify__progress-bar--controlled{transition:transform .2s}.Toastify__progress-bar--rtl{right:0;left:auto;transform-origin:right}.Toastify__progress-bar--default{background:linear-gradient(90deg,#4cd964,#5ac8fa,#007aff,#34aadc,#5856d6,#ff2d55)}.Toastify__progress-bar--dark{background:#bb86fc}@keyframes Toastify__bounceInRight{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(3000px,0,0)}60%{opacity:1;transform:translate3d(-25px,0,0)}75%{transform:translate3d(10px,0,0)}90%{transform:translate3d(-5px,0,0)}to{transform:none}}@keyframes Toastify__bounceOutRight{20%{opacity:1;transform:translate3d(-20px,0,0)}to{opacity:0;transform:translate3d(2000px,0,0)}}@keyframes Toastify__bounceInLeft{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(-3000px,0,0)}60%{opacity:1;transform:translate3d(25px,0,0)}75%{transform:translate3d(-10px,0,0)}90%{transform:translate3d(5px,0,0)}to{transform:none}}@keyframes Toastify__bounceOutLeft{20%{opacity:1;transform:translate3d(20px,0,0)}to{opacity:0;transform:translate3d(-2000px,0,0)}}@keyframes Toastify__bounceInUp{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(0,3000px,0)}60%{opacity:1;transform:translate3d(0,-20px,0)}75%{transform:translate3d(0,10px,0)}90%{transform:translate3d(0,-5px,0)}to{transform:translateZ(0)}}@keyframes Toastify__bounceOutUp{20%{transform:translate3d(0,-10px,0)}40%,45%{opacity:1;transform:translate3d(0,20px,0)}to{opacity:0;transform:translate3d(0,-2000px,0)}}@keyframes Toastify__bounceInDown{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(0,-3000px,0)}60%{opacity:1;transform:translate3d(0,25px,0)}75%{transform:translate3d(0,-10px,0)}90%{transform:translate3d(0,5px,0)}to{transform:none}}@keyframes Toastify__bounceOutDown{20%{transform:translate3d(0,10px,0)}40%,45%{opacity:1;transform:translate3d(0,-20px,0)}to{opacity:0;transform:translate3d(0,2000px,0)}}.Toastify__bounce-enter--bottom-left,.Toastify__bounce-enter--top-left{animation-name:Toastify__bounceInLeft}.Toastify__bounce-enter--bottom-right,.Toastify__bounce-enter--top-right{animation-name:Toastify__bounceInRight}.Toastify__bounce-enter--top-center{animation-name:Toastify__bounceInDown}.Toastify__bounce-enter--bottom-center{animation-name:Toastify__bounceInUp}.Toastify__bounce-exit--bottom-left,.Toastify__bounce-exit--top-left{animation-name:Toastify__bounceOutLeft}.Toastify__bounce-exit--bottom-right,.Toastify__bounce-exit--top-right{animation-name:Toastify__bounceOutRight}.Toastify__bounce-exit--top-center{animation-name:Toastify__bounceOutUp}.Toastify__bounce-exit--bottom-center{animation-name:Toastify__bounceOutDown}@keyframes Toastify__zoomIn{0%{opacity:0;transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes Toastify__zoomOut{0%{opacity:1}50%{opacity:0;transform:scale3d(.3,.3,.3)}to{opacity:0}}.Toastify__zoom-enter{animation-name:Toastify__zoomIn}.Toastify__zoom-exit{animation-name:Toastify__zoomOut}@keyframes Toastify__flipIn{0%{transform:perspective(400px) rotateX(90deg);animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotateX(-20deg);animation-timing-function:ease-in}60%{transform:perspective(400px) rotateX(10deg);opacity:1}80%{transform:perspective(400px) rotateX(-5deg)}to{transform:perspective(400px)}}@keyframes Toastify__flipOut{0%{transform:perspective(400px)}30%{transform:perspective(400px) rotateX(-20deg);opacity:1}to{transform:perspective(400px) rotateX(90deg);opacity:0}}.Toastify__flip-enter{animation-name:Toastify__flipIn}.Toastify__flip-exit{animation-name:Toastify__flipOut}@keyframes Toastify__slideInRight{0%{transform:translate3d(110%,0,0);visibility:visible}to{transform:translateZ(0)}}@keyframes Toastify__slideInLeft{0%{transform:translate3d(-110%,0,0);visibility:visible}to{transform:translateZ(0)}}@keyframes Toastify__slideInUp{0%{transform:translate3d(0,110%,0);visibility:visible}to{transform:translateZ(0)}}@keyframes Toastify__slideInDown{0%{transform:translate3d(0,-110%,0);visibility:visible}to{transform:translateZ(0)}}@keyframes Toastify__slideOutRight{0%{transform:translateZ(0)}to{visibility:hidden;transform:translate3d(110%,0,0)}}@keyframes Toastify__slideOutLeft{0%{transform:translateZ(0)}to{visibility:hidden;transform:translate3d(-110%,0,0)}}@keyframes Toastify__slideOutDown{0%{transform:translateZ(0)}to{visibility:hidden;transform:translate3d(0,500px,0)}}@keyframes Toastify__slideOutUp{0%{transform:translateZ(0)}to{visibility:hidden;transform:translate3d(0,-500px,0)}}.Toastify__slide-enter--bottom-left,.Toastify__slide-enter--top-left{animation-name:Toastify__slideInLeft}.Toastify__slide-enter--bottom-right,.Toastify__slide-enter--top-right{animation-name:Toastify__slideInRight}.Toastify__slide-enter--top-center{animation-name:Toastify__slideInDown}.Toastify__slide-enter--bottom-center{animation-name:Toastify__slideInUp}.Toastify__slide-exit--bottom-left,.Toastify__slide-exit--top-left{animation-name:Toastify__slideOutLeft}.Toastify__slide-exit--bottom-right,.Toastify__slide-exit--top-right{animation-name:Toastify__slideOutRight}.Toastify__slide-exit--top-center{animation-name:Toastify__slideOutUp}.Toastify__slide-exit--bottom-center{animation-name:Toastify__slideOutDown}#___gatsby,#gatsby-focus-wrapper,body,html{height:100%}body{margin:0;background-color:#fafafa}.grvsc-container{overflow:auto;-webkit-overflow-scrolling:touch;padding-top:1rem;padding-top:var(--grvsc-padding-top,var(--grvsc-padding-v,1rem));padding-bottom:1rem;padding-bottom:var(--grvsc-padding-bottom,var(--grvsc-padding-v,1rem));border-radius:8px;border-radius:var(--grvsc-border-radius,8px);font-feature-settings:normal}.grvsc-code{display:inline-block;min-width:100%}.grvsc-line{display:inline-block;box-sizing:border-box;width:100%;padding-left:1.5rem;padding-left:var(--grvsc-padding-left,var(--grvsc-padding-h,1.5rem));padding-right:1.5rem;padding-right:var(--grvsc-padding-right,var(--grvsc-padding-h,1.5rem))}.grvsc-line-highlighted{background-color:var(--grvsc-line-highlighted-background-color,transparent);box-shadow:inset var(--grvsc-line-highlighted-border-width,4px) 0 0 0 var(--grvsc-line-highlighted-border-color,transparent)}</style><meta name="generator" content="Gatsby 2.31.1"/><title data-react-helmet="true">How I created my own Blog | Webpage of Jan meischner</title><link data-react-helmet="true" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&amp;display=swap" rel="stylesheet"/><meta data-react-helmet="true" name="description" content="This page contains the blog and some additional information about Jan Meischner"/><meta data-react-helmet="true" property="og:title" content="How I created my own Blog"/><meta data-react-helmet="true" property="og:description" content="This page contains the blog and some additional information about Jan Meischner"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Jan Meischner"/><meta data-react-helmet="true" name="twitter:title" content="How I created my own Blog"/><meta data-react-helmet="true" name="twitter:description" content="This page contains the blog and some additional information about Jan Meischner"/><style data-styled="" data-styled-version="5.2.1">.ctGbLN{-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;width:100%;}/*!sc*/
+.bsBXIq{-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;width:100%;}/*!sc*/
+.dCAYEV{-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;width:100%;}/*!sc*/
+.iBuJxH{-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;width:100%;}/*!sc*/
+.fhQZPA{-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;width:100%;}/*!sc*/
+.bqWHWV{-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;width:100%;}/*!sc*/
+.rZyZU{-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:100%;}/*!sc*/
+.fsMOTN{-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;width:100%;}/*!sc*/
+data-styled.g1[id="container__FlexContainer-sc-1l6z2rc-0"]{content:"ctGbLN,bsBXIq,dCAYEV,iBuJxH,fhQZPA,bqWHWV,rZyZU,fsMOTN,"}/*!sc*/
+.hNeXDA{-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;-webkit-align-self:flex-end;-ms-flex-item-align:end;align-self:flex-end;}/*!sc*/
+@media (max-width:576px){.hNeXDA{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;}}/*!sc*/
+.buAPHW{-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;-webkit-align-self:auto;-ms-flex-item-align:auto;align-self:auto;}/*!sc*/
+@media (max-width:576px){.buAPHW{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;}}/*!sc*/
+.iDZRql{-webkit-flex:0 1 80px;-ms-flex:0 1 80px;flex:0 1 80px;-webkit-align-self:auto;-ms-flex-item-align:auto;align-self:auto;}/*!sc*/
+@media (max-width:576px){.iDZRql{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;}}/*!sc*/
+.btHzkn{-webkit-flex:0 11 auto;-ms-flex:0 11 auto;flex:0 11 auto;-webkit-align-self:auto;-ms-flex-item-align:auto;align-self:auto;}/*!sc*/
+@media (max-width:576px){.btHzkn{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;}}/*!sc*/
+.ceHKBP{-webkit-flex:0 0 160px;-ms-flex:0 0 160px;flex:0 0 160px;-webkit-align-self:auto;-ms-flex-item-align:auto;align-self:auto;}/*!sc*/
+@media (max-width:576px){.ceHKBP{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;}}/*!sc*/
+.ehBgFP{-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;-webkit-align-self:auto;-ms-flex-item-align:auto;align-self:auto;}/*!sc*/
+@media (max-width:576px){.ehBgFP{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;}}/*!sc*/
+.kpMRgz{-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start;}/*!sc*/
+@media (max-width:576px){.kpMRgz{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;}}/*!sc*/
+.dMyzxO{-webkit-flex:0 1 160px;-ms-flex:0 1 160px;flex:0 1 160px;-webkit-align-self:auto;-ms-flex-item-align:auto;align-self:auto;}/*!sc*/
+@media (max-width:576px){.dMyzxO{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;}}/*!sc*/
+data-styled.g2[id="flex__Flex-sc-13b45bh-0"]{content:"hNeXDA,buAPHW,iDZRql,btHzkn,ceHKBP,ehBgFP,kpMRgz,dMyzxO,"}/*!sc*/
+.crYhLW{color:#343838;font-size:18px;font-weight:600;-webkit-letter-spacing:1.28px;-moz-letter-spacing:1.28px;-ms-letter-spacing:1.28px;letter-spacing:1.28px;margin-bottom:10px;text-align:left;}/*!sc*/
+@media (max-width:576px){.crYhLW{font-size:12px;margin-bottom:5px;display:none;}}/*!sc*/
+data-styled.g3[id="title__Subheading-sc-1ta0izm-0"]{content:"crYhLW,"}/*!sc*/
+.cEQzyI{color:#343838;font-size:60px;font-weight:700;-webkit-letter-spacing:3.28px;-moz-letter-spacing:3.28px;-ms-letter-spacing:3.28px;letter-spacing:3.28px;margin:0 10px;text-align:left;text-shadow:0 1px 5px #FA8D3E;}/*!sc*/
+@media (max-width:576px){.cEQzyI:before{content:"~/";}}/*!sc*/
+data-styled.g4[id="title__MainHeading-sc-1ta0izm-1"]{content:"cEQzyI,"}/*!sc*/
+@media (max-width:576px){.cDtAsj{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:5px;width:100%;}}/*!sc*/
+data-styled.g5[id="title__HeadingContainer-sc-1ta0izm-2"]{content:"cDtAsj,"}/*!sc*/
+.gEgNif{height:20px;width:320px;border-bottom:2px solid #FA8D3E;padding-right:27px;margin-top:20px;}/*!sc*/
+@media (max-width:576px){.gEgNif{width:100%;}}/*!sc*/
+data-styled.g15[id="navigation__Navi-sc-1anu8yn-0"]{content:"gEgNif,"}/*!sc*/
+.cBrRXQ{width:70px;text-align:end;}/*!sc*/
+data-styled.g16[id="navigation__NavigationItem-sc-1anu8yn-1"]{content:"cBrRXQ,"}/*!sc*/
+.jztxfv span{color:#343838;font-weight:700;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+data-styled.g17[id="navigation__NavigationLink-sc-1anu8yn-2"]{content:"jztxfv,"}/*!sc*/
+.ewmwVF{font-size:21px;font-weight:700;-webkit-letter-spacing:1.15px;-moz-letter-spacing:1.15px;-ms-letter-spacing:1.15px;letter-spacing:1.15px;text-align:left;}/*!sc*/
+data-styled.g19[id="h3__H3-pev85x-0"]{content:"ewmwVF,"}/*!sc*/
+.bVaatx{border-radius:10px;}/*!sc*/
+data-styled.g20[id="profilepicture__ProfilePic-sc-1v8ed63-0"]{content:"bVaatx,"}/*!sc*/
+.eqhlmj{margin-top:auto;}/*!sc*/
+data-styled.g21[id="footer__FooterContainer-nglzew-0"]{content:"eqhlmj,"}/*!sc*/
+.zmOvu{border-left:2px solid #FA8D3E;border-radius:10px;border-top:2px solid #FA8D3E;margin-bottom:10px;padding:10px 25px;width:100%;}/*!sc*/
+@media (max-width:576px){.zmOvu{border-left:0;border-bottom:2px solid #FA8D3E;border-radius:0;}}/*!sc*/
+data-styled.g22[id="footer__AboutMe-nglzew-1"]{content:"zmOvu,"}/*!sc*/
+.esbvMR a{margin-left:10px;}/*!sc*/
+.esbvMR img{width:27px;height:24px;}/*!sc*/
+data-styled.g23[id="footer__IconBar-nglzew-2"]{content:"esbvMR,"}/*!sc*/
+.hRPhDA{font-weight:300;font-size:16px;margin:0 1em;}/*!sc*/
+data-styled.g24[id="footer__AboutMeText-nglzew-3"]{content:"hRPhDA,"}/*!sc*/
+.cAZgMQ{margin-top:20px;margin-left:5px;}/*!sc*/
+data-styled.g25[id="footer__BottomAboutMeContainer-nglzew-4"]{content:"cAZgMQ,"}/*!sc*/
+.ciBKnC{max-width:960px;height:100%;font-family:'Zilla Slab',serif;color:#343838;margin:0 auto;}/*!sc*/
+.ciBKnC a{-webkit-text-decoration:none;text-decoration:none;font-weight:600;font-style:italic;color:#FA8D3E;}/*!sc*/
+data-styled.g26[id="layout__LayoutContainer-i6v0ai-0"]{content:"ciBKnC,"}/*!sc*/
+@media (max-width:576px){.gfdbHd{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}}/*!sc*/
+data-styled.g27[id="contentContainer__ContentContainer-z3quhi-0"]{content:"gfdbHd,"}/*!sc*/
+.hBglAs{padding:0 20px 20px;}/*!sc*/
+data-styled.g28[id="mainArea__MainArea-sc-1bqdjmu-0"]{content:"hBglAs,"}/*!sc*/
+.JqSeB{width:100%;margin-top:40px;}/*!sc*/
+data-styled.g34[id="newComment__CommentForm-uofdo5-0"]{content:"JqSeB,"}/*!sc*/
+.fZQTIQ{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;border:0;border-bottom:1px solid #FA8D3E;background-color:inherit;font-family:'Zilla Slab',serif;font-weight:400;font-size:14px;padding-left:20px;}/*!sc*/
+.fZQTIQ:focus{outline:none;border-bottom:1px solid #343838;}/*!sc*/
+.fZQTIQ::-webkit-input-placeholder{font-family:'Zilla Slab',serif;font-style:italic;font-weight:300;}/*!sc*/
+.fZQTIQ::-moz-placeholder{font-family:'Zilla Slab',serif;font-style:italic;font-weight:300;}/*!sc*/
+.fZQTIQ:-ms-input-placeholder{font-family:'Zilla Slab',serif;font-style:italic;font-weight:300;}/*!sc*/
+.fZQTIQ::placeholder{font-family:'Zilla Slab',serif;font-style:italic;font-weight:300;}/*!sc*/
+data-styled.g35[id="newComment__Input-uofdo5-1"]{content:"fZQTIQ,"}/*!sc*/
+.eNymtH{background-color:inherit;border-radius:10px;border:1px solid #FA8D3E;font-family:'Zilla Slab',serif;font-size:14px;font-weight:400;min-height:150px;padding:10px 20px;resize:none;width:auto;}/*!sc*/
+.eNymtH:focus{outline:none;border:1px solid #343838;}/*!sc*/
+.eNymtH::-webkit-input-placeholder{font-family:'Zilla Slab',serif;font-style:italic;font-weight:300;}/*!sc*/
+.eNymtH::-moz-placeholder{font-family:'Zilla Slab',serif;font-style:italic;font-weight:300;}/*!sc*/
+.eNymtH:-ms-input-placeholder{font-family:'Zilla Slab',serif;font-style:italic;font-weight:300;}/*!sc*/
+.eNymtH::placeholder{font-family:'Zilla Slab',serif;font-style:italic;font-weight:300;}/*!sc*/
+data-styled.g36[id="newComment__Textarea-uofdo5-2"]{content:"eNymtH,"}/*!sc*/
+.cAIqxI{margin-left:auto;width:110px;border:none;padding:3px 8px;border-radius:5px;background-color:#FA8D3E;color:white;font-size:14px;font-family:'Zilla Slab',serif;font-weight:600;}/*!sc*/
+.cAIqxI:hover{background-color:#f9700c;}/*!sc*/
+.cAIqxI:active{background-color:#e66406;}/*!sc*/
+data-styled.g37[id="newComment__PrimaryButton-uofdo5-3"]{content:"cAIqxI,"}/*!sc*/
+.jKbSLn .toast{background-color:#FA8D3E;}/*!sc*/
+data-styled.g38[id="newComment__SuccessContainer-uofdo5-4"]{content:"jKbSLn,"}/*!sc*/
+.gGWPgO{border-top:2px solid #FA8D3E;margin:20px 0;padding-top:10px;}/*!sc*/
+data-styled.g39[id="commentsArea__CommentsArea-sc-3cv3gc-0"]{content:"gGWPgO,"}/*!sc*/
+.bVPVTX{font-size:22px;font-weight:600;font-style:italic;}/*!sc*/
+data-styled.g40[id="commentsArea__Title-sc-3cv3gc-1"]{content:"bVPVTX,"}/*!sc*/
+.jecOkY{max-width:350px;}/*!sc*/
+data-styled.g41[id="commentsArea__Comments-sc-3cv3gc-2"]{content:"jecOkY,"}/*!sc*/
+.jGZLNq{margin-top:30px;font-size:24px;color:#FA8D3E;font-weight:600;font-style:italic;}/*!sc*/
+data-styled.g42[id="blogPost__PostTitle-sc-1rdaowk-0"]{content:"jGZLNq,"}/*!sc*/
+.iMRUEf p:first-of-type{font-size:19px;font-weight:600;padding-bottom:30px;}/*!sc*/
+.iMRUEf p{font-weight:400;font-size:19px;font-family:ZillaSlab-Regular;-webkit-letter-spacing:0.58px;-moz-letter-spacing:0.58px;-ms-letter-spacing:0.58px;letter-spacing:0.58px;word-spacing:1px;}/*!sc*/
+.iMRUEf h2{font-size:22px;font-weight:600;font-style:italic;}/*!sc*/
+.iMRUEf .grvsc-line{line-height:1.3rem;width:0;}/*!sc*/
+.iMRUEf .grvsc-code{min-width:0;}/*!sc*/
+.iMRUEf .inlineCode{font-size:16px;}/*!sc*/
+.iMRUEf code{font-size:14px;}/*!sc*/
+data-styled.g43[id="blogPost__PostBody-sc-1rdaowk-1"]{content:"iMRUEf,"}/*!sc*/
+</style><link as="script" rel="preload" href="/webpack-runtime-1b763c25395a6b55c95d.js"/><link as="script" rel="preload" href="/framework-8e528b732ab2eaadb7b7.js"/><link as="script" rel="preload" href="/app-0d0f03066474925245aa.js"/><link as="script" rel="preload" href="/styles-7d4153d260c0197f0043.js"/><link as="script" rel="preload" href="/commons-d4788fb4c1e9c0e05ba1.js"/><link as="script" rel="preload" href="/cd7d5f864fc9e15ed8adef086269b0aeff617554-d47c136faeab099ffc31.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-48fe81595688dbf7a675.js"/><link as="fetch" rel="preload" href="/page-data/how-i-created-my-own-blog/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/4161793270.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div direction="column" class="container__FlexContainer-sc-1l6z2rc-0 layout__LayoutContainer-i6v0ai-0 ctGbLN ciBKnC"><div class="flex__Flex-sc-13b45bh-0 navigation__Navi-sc-1anu8yn-0 hNeXDA gEgNif"><div class="container__FlexContainer-sc-1l6z2rc-0 bsBXIq"><div class="flex__Flex-sc-13b45bh-0 navigation__NavigationItem-sc-1anu8yn-1 buAPHW cBrRXQ"><a class="navigation__NavigationLink-sc-1anu8yn-2 jztxfv"><span>About Me</span></a></div><div class="flex__Flex-sc-13b45bh-0 navigation__NavigationItem-sc-1anu8yn-1 buAPHW cBrRXQ"><a class="navigation__NavigationLink-sc-1anu8yn-2 jztxfv" href="/"><span>Blog</span></a></div></div></div><div class="main__Main-xoliky-0 cjOOa-d"><div direction="column" class="container__FlexContainer-sc-1l6z2rc-0 ctGbLN"><div class="flex__Flex-sc-13b45bh-0 buAPHW"><div class="container__FlexContainer-sc-1l6z2rc-0 dCAYEV"><div width="1" class="flex__Flex-sc-13b45bh-0 iDZRql"></div><div style="width:100%" class="flex__Flex-sc-13b45bh-0 btHzkn"><div class="container__FlexContainer-sc-1l6z2rc-0 title__HeadingContainer-sc-1ta0izm-2 iBuJxH cDtAsj"><div class="flex__Flex-sc-13b45bh-0 title__Subheading-sc-1ta0izm-0 buAPHW crYhLW">another</div><div class="flex__Flex-sc-13b45bh-0 title__MainHeading-sc-1ta0izm-1 buAPHW cEQzyI">Blog</div><div class="flex__Flex-sc-13b45bh-0 title__Subheading-sc-1ta0izm-0 buAPHW crYhLW">about Software Development</div></div></div></div></div><div class="flex__Flex-sc-13b45bh-0 buAPHW"><div id="main" class="container__FlexContainer-sc-1l6z2rc-0 contentContainer__ContentContainer-z3quhi-0 fhQZPA gfdbHd"><div width="2" class="flex__Flex-sc-13b45bh-0 ceHKBP"></div><div class="flex__Flex-sc-13b45bh-0 mainArea__MainArea-sc-1bqdjmu-0 ehBgFP hBglAs"><div direction="column" class="container__FlexContainer-sc-1l6z2rc-0 ctGbLN"><div class="flex__Flex-sc-13b45bh-0 blogPost__PostTitle-sc-1rdaowk-0 buAPHW jGZLNq">How I created my own Blog</div><div class="flex__Flex-sc-13b45bh-0 blogPost__PostBody-sc-1rdaowk-1 buAPHW iMRUEf"><p>I've been playing with the idea of creating my own blog for a long time. I played with <a href="https://ghost.org" title="ghost">ghost</a> a few years ago because I was some kind of <a href="https://nodejs.org/en/">Node.js</a> enthusiast and wanted to try hosting this on my personal NAS. After I learned how easy it is to host a private page with Github I also tried Jekyll. With both approaches I felt uncomfortable creating my own theme. Additionally I wanted to use the whole blog project as something which I can build from scratch.</p>
+<p>Because I haven’t brought my journey to an end the last times, I thought I can create pressure by starting the project with paying real money. So the first thing I did this time was purchasing the domain: <a href="https://www.jmeischner.com">jmeischner.com</a>. </p>
+<p>I wanted to host the blog with Github Pages so that I need a CNAME Record for my domain. I decided to manage my domain with <a href="https://www.digitalocean.com/?utm_campaign=DO_Dev_Awareness_G_Search_B_Generic_Alpha&#x26;utm_adgroup=digital_ocean&#x26;_keyword=digital%20ocean&#x26;_device=c&#x26;_copytype=&#x26;_adposition=&#x26;utm_medium=brand_sem&#x26;utm_source=google&#x26;_dkitrig=&#x26;_2dkitrig=&#x26;gclid=EAIaIQobChMI0-DsntDA6QIVheJ3Ch128wYAEAAYASAAEgL9C_D_BwE">Digital Ocean</a> since I want to use it for another project in the near future and I like to have these things administrated in one place.</p>
+<h2>Design Phase</h2>
+<p>Also something new for me: I didn’t make the decision for the technology stack beforehand. I decided to go with the design first. I read a very inspiring <a href="https://www.git-tower.com/learn/build-your-own-blog/concept/why-build-your-own#start">article series</a> from <a href="https://www.git-tower.com/mac">git-tower</a> and after 2 years of absence from using <a href="https://www.sketch.com">Sketch</a> I made an Udemy Course called <a href="https://www.udemy.com/course/learnsketch3/">Sketch from A to Z </a> to refresh my Sketch knowledge.</p>
+<p>I finally started to create a rough design draft in <a href="https://paper.bywetransfer.com">paper</a>.
+<figure class="gatsby-resp-image-figure" style="margin: 15px 0;text-align:center;width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 523px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 124.19354838709677%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAACXBIWXMAAAsTAAALEwEAmpwYAAACd0lEQVQ4y5VVa3eiQAz1//+5PVu77bGuq8hzGGaYh2i/ZXMDKPaAth/iRCA3N8kNrEK01AZNLjTkg6FTbOl88mRDLX5/vaHu5OQ/zke2Su2B3ut3Oph/lNkjVS6nyylQ7UrK25R2zd+fAYKd9bUwMV6RZiDciMy88RUDF1ewZyaAZ/5Bid1wwvqyHX12QWy8PrU5dohbzWUB68zkVLSFMFRiubQDppk52uCjEQvR3Bh+zYDsKPWjKijRiq9bCqEP6q0fYtEiYcYJCqo4sfW6ZzgHqH0pmTtMm/tr2DB16TEnwxlCS96j144cn4p7j4SzgCgTNzGYipmkNmE2qTDHMwCEna8xTlSxCIiejZqsuKy1WtPv6oVe1auwh7XMeCqlkcQCYC5Nh5+bmvZ1TanW0tNEV6RsQ623d4BKAO08IMqELi/wOXjLA8oazaANJbWmgy6pMIrv3wPGZcDsCojSNvqNS2LWUQvIVm9ls26a9bIQiyWXAyB89DIxexkM5IH/CG5cdVcyYr4FiDL2ZkcfejM0vl9JTB3+GIs2LfZwCogzY3byssDLg+9haFtOMI1dBLxMAK8PM0Bi93TkNxMAwTThHmJjRi0CMD4D7B920husVhgqwDVYjDfpIOkiIPojU+54a1pDb0XJ+oMOa5aQopKlBDnFYSBPAUeGnwwIEf865qLDAwt8nZXia06EfT4PsYs67BlmvKtaygKTTVnRTinZmD95SS9Zwb7iNlhpA4AhqUXA3GayCWChhvJKA9Piq+H/6NfWcEy+vCmQBQZxkbeze2jdcNaPdhmbgI349rckPng5TEF+8nGaBfz6qXz22ZwCon/w/wPrEmwWMT/ydAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="paper draft"
+        title="paper draft"
+        src="/static/cc328574ff4e7494369608baf831ed52/3e286/paper-draft.png"
+        srcset="/static/cc328574ff4e7494369608baf831ed52/544ba/paper-draft.png 248w,
+/static/cc328574ff4e7494369608baf831ed52/bb630/paper-draft.png 496w,
+/static/cc328574ff4e7494369608baf831ed52/3e286/paper-draft.png 523w"
+        sizes="(max-width: 523px) 100vw, 523px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><style class="grvsc-styles">
+  .grvsc-container {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+  }
+  
+  .grvsc-code {
+    display: inline-block;
+    min-width: 100%;
+  }
+  
+  .grvsc-line {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-line-highlighted {
+    background-color: var(--grvsc-line-highlighted-background-color, transparent);
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, transparent);
+  }
+  
+</style></figcaption>
+  </figure></p>
+<p>And brought it to Sketch.
+<figure class="gatsby-resp-image-figure" style="margin: 15px 0;text-align:center;width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 992px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b47cc87de03b44d38834fa6f376619e7/d9ed5/sketch-draft.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACgklEQVQ4y32TWU9aURSF+Sd1bFqUeUak1tZYRH1pGhOoKUZMqkKbCrYvpdHEFn9M1Vjfq/HFIVHjPIACioqITBWtaLK6zwExVtubrLPvydn3u2vvfa+gqdEM04t6KJQqyJUaKLV6KDU6CEUSyFQayFVaKNQ6VIilFLXQ6Kuh1lVBWCmBivKe1dXDZG7Cy1ctaGhshqC/tRqeFhV637aix/0JPV1dcDmccDvfUXTA5XTC1e3g+w905uzowPvOTrhcbrh7P6KxqRkqtQZanR5qjRYCU30djAY9xsd/gl/xONKBAE6DQZyyGArlIu2T29tALAZcXOD68g4OoqS0DHKFEhKpDIKa2ueQyBQYGR3lCZndXewvL8M3MwP/9DR8s7PwTU3BT/vg/DxiGxtIU85FHvrN68Wjx0JIZfIc0NRghlgswdDwME+4OjpCNhJB3OdDgpQiZ6mdHe76cHUVa5OTCCws4OrykucPDHzlQJlckQNWGapRWlZ+AyTY2d4eDldWECElCMbg5+EwouSOAUOLiwWgx/MFD4qKOVAskUJgND7JA0cKDjMEDNNDB0tLiBGMl0kOI2trWP8L+JmARcUlHCiiSgX6KgPKyh/eAbI+HpKONzcRJdAvGg5z+D8gd8iW+4DXDk/8fpwQlAFZD1cmJm718A6QTScHzPXwknp4vr+PY3LDSo1tbSG6vs6BKSqbt4Fe8k8gmwwDfh+6AaZpsoG5OQSZyE2IYiCv3zQcJBLIZrN5oOd+hz/GxnJfajLJoQfUvwgTlVmIJESjwFmm8GH39fXfnjJbKipF/Bey2+14Y7HAZn2NNpLNar0V+b3Fys9ttja0t9tR87QWwopKDmP6Aw0X2UEdNF9+AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="sketch draft"
+        title="sketch draft"
+        src="/static/b47cc87de03b44d38834fa6f376619e7/91f10/sketch-draft.png"
+        srcset="/static/b47cc87de03b44d38834fa6f376619e7/544ba/sketch-draft.png 248w,
+/static/b47cc87de03b44d38834fa6f376619e7/bb630/sketch-draft.png 496w,
+/static/b47cc87de03b44d38834fa6f376619e7/91f10/sketch-draft.png 992w,
+/static/b47cc87de03b44d38834fa6f376619e7/6f278/sketch-draft.png 1488w,
+/static/b47cc87de03b44d38834fa6f376619e7/2adcb/sketch-draft.png 1984w,
+/static/b47cc87de03b44d38834fa6f376619e7/d9ed5/sketch-draft.png 2880w"
+        sizes="(max-width: 992px) 100vw, 992px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><style class="grvsc-styles">
+  .grvsc-container {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+  }
+  
+  .grvsc-code {
+    display: inline-block;
+    min-width: 100%;
+  }
+  
+  .grvsc-line {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-line-highlighted {
+    background-color: var(--grvsc-line-highlighted-background-color, transparent);
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, transparent);
+  }
+  
+</style></figcaption>
+  </figure></p>
+<p>Thereafter I started to look for a font and colors I like. I ended up with <a href="https://fonts.google.com/specimen/Zilla+Slab">Zilla Slab</a> as serif font and <a href="https://fonts.google.com/specimen/Work+Sans">Work Sans</a> as sans serif font. To find matching colors I browsed <a href="https://www.colourlovers.com">colourlovers</a> which is a bit cluttered with advertisement but has a huge amount of palettes and colors. A simple orange caught my eye as the highlighting color and I use a dark gray as primary text color.</p>
+<p>So before I started the implementation I ended up with the following Sketch design.
+<figure class="gatsby-resp-image-figure" style="margin: 15px 0;text-align:center;width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 992px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/12f5f220047a06f90e1a6b886810c7f6/07a9c/article-list-view.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.12903225806451%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAABnklEQVQ4y41T23LbIBTM//9Ok/5DH/OQ6Uxn2oc4tS4IkIQBIQTbBXvseOLGYWYlNOgsu+fygHcrZ9xY+d15Rk6Rmw1xXbB4i7Rt57NC8HD1cwXQNW94ef6BQTRIKWNdA7F+uCql7Uj0OWGGlAI/X57x5/cviEGiaVt0XQchBIwxVBfgrEGKoTqonMfHhfB8C1ekmmnUOJgJnoHWHuC859vCOYfVG4yqI/lcvz9VWK3wZjcLYqhve5hgnceBhMX+tnooulBKIYRwJeamwjUsaPe7ir79i75rqFhVklKIHD2ckbyoKLT3CTdWcFYNjKYttYeZGGxdDS7piFQ4qgGjllS4fEEhbXVUJro9C9Gh71mUtmHVe0SmI5HQzhLzPNe83iWMwUH3r9BiB00lehwxEkprWvbVgVKynm0xfk1haR05iJq/AlFV7hEWf2r2/CHuv23DMjNvrKC3p8B0QZkUNnQp3NvuFQMvvdk2l9Y57r89PuHx6TsWtkWxerQ9naH1iEHK+21zGiTmR7EYPTbOagkqKONXUPbbaYavLQP/AIfa9jPztHTnAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="article list view"
+        title="article list view"
+        src="/static/12f5f220047a06f90e1a6b886810c7f6/91f10/article-list-view.png"
+        srcset="/static/12f5f220047a06f90e1a6b886810c7f6/544ba/article-list-view.png 248w,
+/static/12f5f220047a06f90e1a6b886810c7f6/bb630/article-list-view.png 496w,
+/static/12f5f220047a06f90e1a6b886810c7f6/91f10/article-list-view.png 992w,
+/static/12f5f220047a06f90e1a6b886810c7f6/07a9c/article-list-view.png 1440w"
+        sizes="(max-width: 992px) 100vw, 992px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><style class="grvsc-styles">
+  .grvsc-container {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+  }
+  
+  .grvsc-code {
+    display: inline-block;
+    min-width: 100%;
+  }
+  
+  .grvsc-line {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-line-highlighted {
+    background-color: var(--grvsc-line-highlighted-background-color, transparent);
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, transparent);
+  }
+  
+</style></figcaption>
+  </figure></p>
+<h2>Implementation Phase</h2>
+<p>I have used react at work and we have just started a new project with <a href="https://create-react-app.dev">create-react-app</a> so that I was curious to explore an alternative. I ended up with <a href="https://www.gatsbyjs.org">Gatsby</a>. As a static page generator it integrates perfectly with Github Pages and with its built-in markdown transformation plugin it serves my need of having a markdown based blog system.</p>
+<p>While working with <em>Vue.js</em> I got used to the <em>single file components</em> approach. Besides different other solutions I wanted to give the <a href="https://styled-components.com">styled components</a> idea a chance and started to create 2 basic <em>Flexbox</em> components to implement my design — <em>Container</em> and <em>Item</em>.</p>
+<pre class="grvsc-container ayu-light grvsc-mm-tJFxWe" data-language="js" data-index="0"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-tmH3wB-3 grvsc-tmH3wB-i grvsc-tJFxWe-3 grvsc-tJFxWe-i">/** Container **/</span></span>
+<span class="grvsc-line"><span class="mtk6 grvsc-tJFxWe-6">import</span><span class="mtk1 grvsc-tJFxWe-1"> styled </span><span class="mtk6 grvsc-tJFxWe-6">from</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&#39;styled-components&#39;</span></span>
+<span class="grvsc-line"></span>
+<span class="grvsc-line"><span class="mtk6 grvsc-tJFxWe-6">const</span><span class="mtk1 grvsc-tJFxWe-1"> Container </span><span class="mtk12 grvsc-tJFxWe-12">=</span><span class="mtk1 grvsc-tJFxWe-1"> styled</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk9 grvsc-tJFxWe-9">div</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">`</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">  align-content: ${</span><span class="grvsc-tmH3wB-21 grvsc-tJFxWe-21">p</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk6 grvsc-tJFxWe-6">=&gt;</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> (</span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">alignContent</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">?</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">alignContent</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">:</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> &quot;stretch&quot;)};</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">  align-items: ${</span><span class="grvsc-tmH3wB-21 grvsc-tJFxWe-21">p</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk6 grvsc-tJFxWe-6">=&gt;</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> (</span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">alignItems</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">?</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">alignItems</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">:</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> &quot;stretch&quot;)};</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">  display: flex;</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">  flex-direction: ${</span><span class="grvsc-tmH3wB-21 grvsc-tJFxWe-21">p</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk6 grvsc-tJFxWe-6">=&gt;</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> (</span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">direction</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">?</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">direction</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">:</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> &quot;row&quot;)};</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">  flex-wrap: ${</span><span class="grvsc-tmH3wB-21 grvsc-tJFxWe-21">p</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk6 grvsc-tJFxWe-6">=&gt;</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> (</span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">wrap</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">?</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">wrap</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">:</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> &quot;nowrap&quot;)};</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">  justify-content: ${</span><span class="grvsc-tmH3wB-21 grvsc-tJFxWe-21">p</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk6 grvsc-tJFxWe-6">=&gt;</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> (</span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">justifyContent</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">?</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">justifyContent</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">:</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> &quot;flex-start&quot;)};</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">  width: 100%;</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">`</span></span>
+<span class="grvsc-line"><span class="mtk6 grvsc-tJFxWe-6">export</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="mtk6 grvsc-tJFxWe-6">default</span><span class="mtk1 grvsc-tJFxWe-1"> Container</span></span>
+<span class="grvsc-line"></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-3 grvsc-tmH3wB-i grvsc-tJFxWe-3 grvsc-tJFxWe-i">/** Item **/</span></span>
+<span class="grvsc-line"><span class="mtk6 grvsc-tJFxWe-6">import</span><span class="mtk1 grvsc-tJFxWe-1"> styled </span><span class="mtk6 grvsc-tJFxWe-6">from</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&#39;styled-components&#39;</span></span>
+<span class="grvsc-line"></span>
+<span class="grvsc-line"><span class="mtk6 grvsc-tJFxWe-6">const</span><span class="mtk1 grvsc-tJFxWe-1"> Item </span><span class="mtk12 grvsc-tJFxWe-12">=</span><span class="mtk1 grvsc-tJFxWe-1"> styled</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk9 grvsc-tJFxWe-9">div</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">`</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">    flex: ${</span><span class="grvsc-tmH3wB-21 grvsc-tJFxWe-21">p</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk6 grvsc-tJFxWe-6">=&gt;</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">shrink</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">?</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">shrink</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">:</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="grvsc-tmH3wB-5 grvsc-tJFxWe-5">0</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">} ${</span><span class="grvsc-tmH3wB-21 grvsc-tJFxWe-21">p</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk6 grvsc-tJFxWe-6">=&gt;</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">grow</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">?</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">grow</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">:</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="grvsc-tmH3wB-5 grvsc-tJFxWe-5">1</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">} ${ </span><span class="grvsc-tmH3wB-21 grvsc-tJFxWe-21">p</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk6 grvsc-tJFxWe-6">=&gt;</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">basis</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">?</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">basis</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">:</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">width</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">?</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">width</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">*</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="grvsc-tmH3wB-5 grvsc-tJFxWe-5">80</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">+</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> &#39;px&#39; </span><span class="mtk12 grvsc-tJFxWe-12">:</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> &#39;auto&#39; };</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">    align-self: ${</span><span class="grvsc-tmH3wB-21 grvsc-tJFxWe-21">p</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk6 grvsc-tJFxWe-6">=&gt;</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">align</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">?</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">align</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk12 grvsc-tJFxWe-12">:</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> &#39;auto&#39;};</span></span>
+<span class="grvsc-line"></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">    @media (${</span><span class="grvsc-tmH3wB-21 grvsc-tJFxWe-21">p</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk6 grvsc-tJFxWe-6">=&gt;</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7"> </span><span class="mtk1 grvsc-tJFxWe-1">p</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">theme</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">media</span><span class="mtk12 grvsc-tJFxWe-12">.</span><span class="mtk1 grvsc-tJFxWe-1">small</span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">}) {</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">        flex-basis: auto;</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">    }</span></span>
+<span class="grvsc-line"><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">`</span></span>
+<span class="grvsc-line"></span>
+<span class="grvsc-line"><span class="mtk6 grvsc-tJFxWe-6">export</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="mtk6 grvsc-tJFxWe-6">default</span><span class="mtk1 grvsc-tJFxWe-1"> Item</span></span></code></pre>
+<p>I used these components as base elements for most of the other styled-components <code class="inlineCode ayu-light" data-language="js" data-index="0"><span class="mtk6">const</span><span class="mtk1"> </span><span class="mtk1">myComponent</span><span class="mtk1"> </span><span class="mtk12">=</span><span class="mtk1"> </span><span class="mtk9">styled</span><span class="mtk1">(</span><span class="mtk1">Container</span><span class="mtk1">)</span></code>. To get the styled-component library working with the Gatsby production build it‘s necessary to use the <a href="https://www.gatsbyjs.org/packages/gatsby-plugin-styled-components/#gatsby-plugin-styled-components">gatsby-plugin-styled-components</a>, otherwise there could be some strange effects that some styles do not apply or you can see the full page without styling for a short moment before the page renders correctly.</p>
+<p>Additionally I created an overall theme with the global styling parameters I potentially want to play with in the future and which I want to reuse throughout my blog.</p>
+<pre class="grvsc-container ayu-light grvsc-mm-tJFxWe" data-language="js" data-index="1"><code class="grvsc-code"><span class="grvsc-line"><span class="mtk6 grvsc-tJFxWe-6">const</span><span class="mtk1 grvsc-tJFxWe-1"> theme </span><span class="mtk12 grvsc-tJFxWe-12">=</span><span class="mtk1 grvsc-tJFxWe-1"> {</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">  fontFamily</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;&#39;Zilla Slab&#39;, serif&quot;</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">  color</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> {</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    primary</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;#343838&quot;</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    secondary</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;#FF9900&quot;</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">  }</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">  zilla</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> {</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    light</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-5 grvsc-tJFxWe-5">300</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    regular</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-5 grvsc-tJFxWe-5">400</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    semibold</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-5 grvsc-tJFxWe-5">600</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    bold</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-5 grvsc-tJFxWe-5">700</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">  }</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">  fontSize</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> {</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    h1</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;24px&quot;</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    h2</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;22px&quot;</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    h3</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;20px&quot;</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    m</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;18px&quot;</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    s</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;16px&quot;</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    sm</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;14px&quot;</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    xsm</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;12px&quot;</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">  }</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">  media</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> {</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    small</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;max-width: 576px&quot;</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    medium</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;max-width: 768px&quot;</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">    large</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-7 grvsc-tJFxWe-7">&quot;max-width: 992px&quot;</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">,</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">  }</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">}</span></span>
+<span class="grvsc-line"></span>
+<span class="grvsc-line"><span class="mtk6 grvsc-tJFxWe-6">export</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="mtk6 grvsc-tJFxWe-6">default</span><span class="mtk1 grvsc-tJFxWe-1"> theme</span></span></code></pre>
+<p>The next big step was to setup the markdown transformer. Fortunately this is one of the basic features Gatsby ships with, so that I could follow the intermediate tutorial starting from the <a href="https://www.gatsbyjs.org/tutorial/part-six/">transformer plugins</a> chapter. As described there I started with filling my <em>article list page</em>, which is an overview about the existing posts. Thereupon I followed the chapter <a href="https://www.gatsbyjs.org/tutorial/part-seven/">programmatically create pages from data</a> to create the actual <em>blog post page</em> from a markdown document.</p>
+<p>For the <em>blog post page</em> I additionally added <a href="https://www.gatsbyjs.org/packages/gatsby-remark-vscode/">gatsby-remark-vscode</a> which I wanted to use to display containers with syntax highlighting in my blog posts. To get this plugin working with a smaller viewport width I needed a weird css quirk:</p>
+<pre class="grvsc-container ayu-light grvsc-mm-tJFxWe" data-language="css" data-index="2"><code class="grvsc-code"><span class="grvsc-line"><span class="mtk9 grvsc-tJFxWe-9">.grvsc-line</span><span class="mtk1 grvsc-tJFxWe-1"> {</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">  </span><span class="grvsc-tmH3wB-10 grvsc-tJFxWe-10">width</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-5 grvsc-tJFxWe-5">0</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">;</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">}</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">  </span></span>
+<span class="grvsc-line"><span class="mtk9 grvsc-tJFxWe-9">.grvsc-code</span><span class="mtk1 grvsc-tJFxWe-1"> {</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">  </span><span class="grvsc-tmH3wB-10 grvsc-tJFxWe-10">min-width</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">:</span><span class="mtk1 grvsc-tJFxWe-1"> </span><span class="grvsc-tmH3wB-5 grvsc-tJFxWe-5">0</span><span class="grvsc-tmH3wB-23 grvsc-tJFxWe-23">;</span></span>
+<span class="grvsc-line"><span class="mtk1 grvsc-tJFxWe-1">}</span></span></code></pre>
+<p>Finally I struggled a bit with a tool to write the actual blog posts. I am a big fan of <a href="https://bear.app">bear</a> and as far as I made all notes concerning this current story in bear I started to write the text there also. I found the markdown export functionality not sufficient enough, so that I tried <a href="https://ulysses.app">Ulysses</a> again after some years. Unfortunately the export didn‘t fit my needs again and more pivotal was, that I had serious problems with the iCloud sync. I am now writing these sentences in bear and will try to build a custom workaround for the <em>frontmatter</em> part of the document.</p>
+<p>Thank you for reading so far and I‘m glad that I have finished my first blog post now.</p>
+<h2>Link Collection</h2>
+<ul>
+<li><a href="https://www.git-tower.com/learn/build-your-own-blog/concept/why-build-your-own#start">Article series</a> with hints how to build an own blog</li>
+<li>Managing a <a href="%5Bhttps://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site%5D">custom domain for a Github pages site</a></li>
+<li>All around <a href="https://www.colourlovers.com">colors</a></li>
+</ul>
+<style class="grvsc-styles">
+  .grvsc-container {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+  }
+  
+  .grvsc-code {
+    display: inline-block;
+    min-width: 100%;
+  }
+  
+  .grvsc-line {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-line-highlighted {
+    background-color: var(--grvsc-line-highlighted-background-color, transparent);
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, transparent);
+  }
+  
+  .ayu-light {
+    background-color: #fafafa;
+    color: #6c7680;
+  }
+  .ayu-light .grvsc-tmH3wB-i { font-style: italic; }
+  .ayu-light .grvsc-tmH3wB-3 { color: #ABB0B6; }
+  .ayu-light .mtk6 { color: #FA8D3E; }
+  .ayu-light .mtk1 { color: #6C7680; }
+  .ayu-light .grvsc-tmH3wB-7 { color: #86B300; }
+  .ayu-light .mtk12 { color: #ED9366; }
+  .ayu-light .mtk9 { color: #F2AE49; }
+  .ayu-light .grvsc-tmH3wB-21 { color: #A37ACC; }
+  .ayu-light .grvsc-tmH3wB-5 { color: #FF9940; }
+  .ayu-light .grvsc-tmH3wB-23 { color: #6C7680B3; }
+  .ayu-light .grvsc-tmH3wB-10 { color: #55B4D4; }
+  
+  /* Ayu Dark */
+  @media (prefers-color-scheme: dark) {
+    .grvsc-mm-tJFxWe {
+      background-color: #0a0e14;
+      color: #b3b1ad;
+    }
+    .grvsc-mm-tJFxWe .grvsc-tJFxWe-i { font-style: italic; }
+    .grvsc-mm-tJFxWe .grvsc-tJFxWe-3 { color: #626A73; }
+    .grvsc-mm-tJFxWe .grvsc-tJFxWe-6 { color: #FF8F40; }
+    .grvsc-mm-tJFxWe .grvsc-tJFxWe-1 { color: #B3B1AD; }
+    .grvsc-mm-tJFxWe .grvsc-tJFxWe-7 { color: #C2D94C; }
+    .grvsc-mm-tJFxWe .grvsc-tJFxWe-12 { color: #F29668; }
+    .grvsc-mm-tJFxWe .grvsc-tJFxWe-9 { color: #FFB454; }
+    .grvsc-mm-tJFxWe .grvsc-tJFxWe-21 { color: #FFEE99; }
+    .grvsc-mm-tJFxWe .grvsc-tJFxWe-5 { color: #E6B450; }
+    .grvsc-mm-tJFxWe .grvsc-tJFxWe-23 { color: #B3B1ADB3; }
+    .grvsc-mm-tJFxWe .grvsc-tJFxWe-10 { color: #39BAE6; }
+  }
+</style></div><div direction="column" class="container__FlexContainer-sc-1l6z2rc-0 commentsArea__CommentsArea-sc-3cv3gc-0 bqWHWV gGWPgO"><div class="flex__Flex-sc-13b45bh-0 commentsArea__Title-sc-3cv3gc-1 kpMRgz bVPVTX">Comment Area</div><div direction="column" class="container__FlexContainer-sc-1l6z2rc-0 commentsArea__Comments-sc-3cv3gc-2 rZyZU jecOkY"><div><form method="POST" action="https://commentarea-jmeischner.herokuapp.com/v2/entry/jmeischner/jmeischner.github.io/develop/comments"><div direction="column" class="container__FlexContainer-sc-1l6z2rc-0 newComment__CommentForm-uofdo5-0 ctGbLN JqSeB"><input type="hidden" name="options[redirect]" value="https://www.jmeischner.com/how-i-created-my-own-blog?commentAdded=1"/><input type="hidden" name="fields[slug]" value="how-i-created-my-own-blog"/><input type="text" placeholder="Name" name="fields[name]" class="newComment__Input-uofdo5-1 fZQTIQ"/><br/><textarea placeholder="Comment" name="fields[message]" class="newComment__Textarea-uofdo5-2 eNymtH"></textarea><br/><button type="submit" class="newComment__PrimaryButton-uofdo5-3 cAIqxI">Add Comment</button></div></form><div class="Toastify"></div></div></div></div></div></div></div></div></div></div><div class="flex__Flex-sc-13b45bh-0 footer__FooterContainer-nglzew-0 buAPHW eqhlmj"><div class="container__FlexContainer-sc-1l6z2rc-0 dCAYEV"><div width="2" class="flex__Flex-sc-13b45bh-0 dMyzxO"></div><div class="flex__Flex-sc-13b45bh-0 footer__AboutMe-nglzew-1 buAPHW zmOvu"><div direction="column" class="container__FlexContainer-sc-1l6z2rc-0 ctGbLN"><div class="flex__Flex-sc-13b45bh-0 buAPHW"><div class="container__FlexContainer-sc-1l6z2rc-0 fsMOTN"><div class="flex__Flex-sc-13b45bh-0 buAPHW"><div class="h3__H3-pev85x-0 ewmwVF">About Me</div></div><div class="flex__Flex-sc-13b45bh-0 footer__IconBar-nglzew-2 buAPHW esbvMR"><a href="https://github.com/jmeischner" target="_blank" rel="noopener noreferrer"><svg width="27px" height="24px" viewBox="0 0 27 24" version="1.1"><title>icon/github</title><desc>Created with Sketch.</desc><g id="Article-Overview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Desktop---Article-List-View" transform="translate(-1068.000000, -756.000000)" fill="#343838"><g id="About-Me-Box" transform="translate(410.000000, 747.000000)"><g id="External-Sites" transform="translate(658.000000, 9.000000)"><g id="icon/github"><g id="github"><path d="M8.81442125,18.8419355 C8.81442125,18.9387097 8.69222011,19.016129 8.53814042,19.016129 C8.36280835,19.0306452 8.24060721,18.9532258 8.24060721,18.8419355 C8.24060721,18.7451613 8.36280835,18.6677419 8.51688805,18.6677419 C8.67628083,18.6532258 8.81442125,18.7306452 8.81442125,18.8419355 Z M7.16204934,18.6241935 C7.12485769,18.7209677 7.23111954,18.8322581 7.39051233,18.8612903 C7.52865275,18.9096774 7.68804554,18.8612903 7.7199241,18.7645161 C7.75180266,18.6677419 7.65085389,18.5564516 7.4914611,18.5129032 C7.35332068,18.4790323 7.19924099,18.5274194 7.16204934,18.6241935 Z M9.51043643,18.5419355 C9.35635674,18.5758065 9.25009488,18.6677419 9.26603416,18.7790323 C9.28197343,18.8758065 9.42011385,18.9387097 9.57950664,18.9048387 C9.73358634,18.8709677 9.8398482,18.7790323 9.82390892,18.6822581 C9.80796964,18.5903226 9.66451613,18.5274194 9.51043643,18.5419355 Z M13.0064516,0 C5.63719165,0 0,5.09516129 0,11.8064516 C0,17.1725806 3.7085389,21.7645161 9.0056926,23.3806452 C9.6857685,23.4919355 9.92485769,23.1096774 9.92485769,22.7951613 C9.92485769,22.4951613 9.90891841,20.8403226 9.90891841,19.8241935 C9.90891841,19.8241935 6.18975332,20.55 5.40872865,18.3822581 C5.40872865,18.3822581 4.80303605,16.9741935 3.9316888,16.6112903 C3.9316888,16.6112903 2.71499051,15.8516129 4.01669829,15.866129 C4.01669829,15.866129 5.33965844,15.9629032 6.06755218,17.1145161 C7.23111954,18.9822581 9.18102467,18.4451613 9.94079696,18.1258065 C10.0629981,17.3516129 10.4083491,16.8145161 10.7908918,16.4951613 C7.82087287,16.1951613 4.82428843,15.8032258 4.82428843,11.1483871 C4.82428843,9.81774194 5.22808349,9.15 6.07817837,8.2983871 C5.94003795,7.98387097 5.48842505,6.68709677 6.21631879,5.01290323 C7.32675522,4.6983871 9.88235294,6.31935484 9.88235294,6.31935484 C10.9449715,6.0483871 12.0872865,5.90806452 13.2189753,5.90806452 C14.3506641,5.90806452 15.4929791,6.0483871 16.5555977,6.31935484 C16.5555977,6.31935484 19.1111954,4.69354839 20.2216319,5.01290323 C20.9495256,6.69193548 20.4979127,7.98387097 20.3597723,8.2983871 C21.2098672,9.15483871 21.7305503,9.82258065 21.7305503,11.1483871 C21.7305503,15.8177419 18.6011385,16.1903226 15.6311195,16.4951613 C16.1199241,16.8774194 16.5343454,17.6032258 16.5343454,18.7403226 C16.5343454,20.3709677 16.5184061,22.3887097 16.5184061,22.7854839 C16.5184061,23.1 16.7628083,23.4822581 17.4375712,23.3709677 C22.7506641,21.7645161 26.3529412,17.1725806 26.3529412,11.8064516 C26.3529412,5.09516129 20.3757116,0 13.0064516,0 Z M5.16432638,16.6887097 C5.09525617,16.7370968 5.11119545,16.8483871 5.20151803,16.9403226 C5.28652751,17.0177419 5.40872865,17.0516129 5.47779886,16.9887097 C5.54686907,16.9403226 5.53092979,16.8290323 5.44060721,16.7370968 C5.35559772,16.6596774 5.23339658,16.6258065 5.16432638,16.6887097 Z M4.59051233,16.2967742 C4.55332068,16.3596774 4.60645161,16.4370968 4.71271347,16.4854839 C4.79772296,16.533871 4.90398482,16.5193548 4.94117647,16.4516129 C4.97836812,16.3887097 4.92523719,16.3112903 4.81897533,16.2629032 C4.71271347,16.233871 4.62770398,16.2483871 4.59051233,16.2967742 Z M6.31195446,18.0193548 C6.22694497,18.0822581 6.25882353,18.2274194 6.38102467,18.3193548 C6.50322581,18.4306452 6.6573055,18.4451613 6.72637571,18.3677419 C6.79544592,18.3048387 6.76356736,18.1596774 6.6573055,18.0677419 C6.54041746,17.9564516 6.38102467,17.9419355 6.31195446,18.0193548 Z M5.70626186,17.3080645 C5.62125237,17.3564516 5.62125237,17.4822581 5.70626186,17.5935484 C5.79127135,17.7048387 5.93472486,17.7532258 6.00379507,17.7048387 C6.08880455,17.6419355 6.08880455,17.516129 6.00379507,17.4048387 C5.92941176,17.2935484 5.79127135,17.2451613 5.70626186,17.3080645 Z" id="Shape" fill-rule="nonzero"></path></g></g></g></g></g></g></svg></a><a href="https://www.linkedin.com/in/jmeischner" target="_blank" rel="noopener noreferrer"><svg width="28px" height="24px" viewBox="0 0 28 24" version="1.1"><title>icon/linkedin</title><desc>Created with Sketch.</desc><g id="Article-Overview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Desktop---Article-List-View" transform="translate(-1110.000000, -756.000000)" fill="#343838"><g id="About-Me-Box" transform="translate(410.000000, 747.000000)"><g id="External-Sites" transform="translate(658.000000, 9.000000)"><g id="icon/linkedin" transform="translate(42.820000, 0.000000)"><g id="linkedin"><path d="M24.4705882,0 L1.87647059,0 C0.841176471,0 0,0.776785714 0,1.73035714 L0,22.2696429 C0,23.2232143 0.841176471,24 1.87647059,24 L24.4705882,24 C25.5058824,24 26.3529412,23.2232143 26.3529412,22.2696429 L26.3529412,1.73035714 C26.3529412,0.776785714 25.5058824,0 24.4705882,0 Z M7.96470588,20.5714286 L4.05882353,20.5714286 L4.05882353,9.11785714 L7.97058824,9.11785714 L7.97058824,20.5714286 L7.96470588,20.5714286 Z M6.01176471,7.55357143 C4.75882353,7.55357143 3.74705882,6.62678571 3.74705882,5.49107143 C3.74705882,4.35535714 4.75882353,3.42857143 6.01176471,3.42857143 C7.25882353,3.42857143 8.27647059,4.35535714 8.27647059,5.49107143 C8.27647059,6.63214286 7.26470588,7.55357143 6.01176471,7.55357143 L6.01176471,7.55357143 Z M22.6058824,20.5714286 L18.7,20.5714286 L18.7,15 C18.7,13.6714286 18.6705882,11.9625 16.6705882,11.9625 C14.6352941,11.9625 14.3235294,13.4089286 14.3235294,14.9035714 L14.3235294,20.5714286 L10.4176471,20.5714286 L10.4176471,9.11785714 L14.1647059,9.11785714 L14.1647059,10.6821429 L14.2176471,10.6821429 C14.7411765,9.78214286 16.0176471,8.83392857 17.9176471,8.83392857 C21.8705882,8.83392857 22.6058824,11.2071429 22.6058824,14.2928571 L22.6058824,20.5714286 L22.6058824,20.5714286 Z" id="Shape" fill-rule="nonzero"></path></g></g></g></g></g></g></svg></a><a href="https://www.xing.com/profile/Jan_Meischner" target="_blank" rel="noopener noreferrer"><svg width="27px" height="24px" viewBox="0 0 27 24" version="1.1"><title>icon/xing</title><desc>Created with Sketch.</desc><g id="Article-Overview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Desktop---Article-List-View" transform="translate(-1153.000000, -756.000000)" fill="#343838"><g id="About-Me-Box" transform="translate(410.000000, 747.000000)"><g id="External-Sites" transform="translate(658.000000, 9.000000)"><g id="icon/xing" transform="translate(85.640000, 0.000000)"><g id="xing-square"><path d="M23.5294118,0 L2.82352941,0 C1.26470588,0 0,1.15178571 0,2.57142857 L0,21.4285714 C0,22.8482143 1.26470588,24 2.82352941,24 L23.5294118,24 C25.0882353,24 26.3529412,22.8482143 26.3529412,21.4285714 L26.3529412,2.57142857 C26.3529412,1.15178571 25.0882353,0 23.5294118,0 Z M8.25882353,15.4392857 L5.51764706,15.4392857 C5.19411765,15.4392857 5.00588235,15.1553571 5.16470588,14.8875 L8.06470588,10.2428571 C8.07058824,10.2428571 8.07058824,10.2375 8.06470588,10.2321429 L6.21764706,7.33928571 C6.04117647,7.03928571 6.22941176,6.79821429 6.57058824,6.79821429 L9.31176471,6.79821429 C9.61764706,6.79821429 9.87058824,6.95357143 10.0705882,7.26428571 L11.9470588,10.2267857 C11.8705882,10.35 10.8882353,11.925 9,14.9517857 C8.79411765,15.2839286 8.54705882,15.4392857 8.25882353,15.4392857 Z M21.1823529,3.96964286 L15.1352941,13.65 L15.1352941,13.6607143 L18.9882353,20.0357143 C19.1529412,20.3089286 18.9941176,20.5767857 18.6352941,20.5767857 L15.8941176,20.5767857 C15.5705882,20.5767857 15.3235294,20.4214286 15.1352941,20.1107143 L11.2529412,13.6660714 C11.3882353,13.4464286 13.4176471,10.1892857 17.3352941,3.9 C17.5294118,3.58928571 17.7705882,3.43384632 18.0705882,3.43384632 L20.8294118,3.43384632 C21.1647059,3.42857143 21.3470588,3.68571429 21.1823529,3.96964286 Z" id="Shape" fill-rule="nonzero"></path></g></g></g></g></g></g></svg></a></div></div></div><div class="flex__Flex-sc-13b45bh-0 buAPHW"><div class="container__FlexContainer-sc-1l6z2rc-0 footer__BottomAboutMeContainer-nglzew-4 dCAYEV cAZgMQ"><div class="flex__Flex-sc-13b45bh-0 buAPHW"><div class="profilepicture__ProfilePic-sc-1v8ed63-0 bVaatx gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:100px;height:150px"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgUD/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABV6TczyQZqnI2Zgf/xAAcEAEBAQACAwEAAAAAAAAAAAABAgADERITISL/2gAIAQEAAQUC4p7v1nkjLwV++X6pjo1XOq5EcuXf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHxAAAgEDBQEAAAAAAAAAAAAAAAERISIxAiBBUWGR/9oACAEBAAY/AkqxHBhz6iDLQquZMNmqXUtTntlqXzZ//8QAHBAAAwEBAAMBAAAAAAAAAAAAAAERITFBYXGB/9oACAEBAAE/IegE29DotHFCmESfDSkhOS0b3Y1cJPfwFuilqfg12N0YyH3RNfSBRn//2gAMAwEAAgADAAAAEPPCAP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EACAQAQACAgIBBQAAAAAAAAAAAAEAESFRMUGhYXGBkcH/2gAIAQEAAT8QAIwYbXjG4NuhEDo6GLiNC2PEQKK1rE5ut0wHqKoAadBBrWq7AB9xksvNkAeX8mLZTQPScZJluL7rFNz2+Zn0R1Wf/9k=" alt="A Picture of Me" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/577f59af8bdf4cb3b776c403322a5660/86e11/me.jpg 1x,
+/static/577f59af8bdf4cb3b776c403322a5660/aabdf/me.jpg 1.5x,
+/static/577f59af8bdf4cb3b776c403322a5660/f836f/me.jpg 2x" /><img loading="lazy" width="100" height="150" srcset="/static/577f59af8bdf4cb3b776c403322a5660/86e11/me.jpg 1x,
+/static/577f59af8bdf4cb3b776c403322a5660/aabdf/me.jpg 1.5x,
+/static/577f59af8bdf4cb3b776c403322a5660/f836f/me.jpg 2x" src="/static/577f59af8bdf4cb3b776c403322a5660/86e11/me.jpg" alt="A Picture of Me" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div class="flex__Flex-sc-13b45bh-0 buAPHW"><p class="footer__AboutMeText-nglzew-3 hRPhDA">My name is Jan Meischner and I&#x27;m a software developer located in Berlin (germany). I&#x27;m interested in all the things around development: design, frontend, backend, architecture and devops topics. I try to make use of every chance I get to learn new things. One of my passions is improving productivity by using the right working techniques and tools. I&#x27;m a big fan of Scrum and GTD.</p></div></div></div></div></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/how-i-created-my-own-blog";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-64742d1bff844b746df5.js"],"app":["/app-0d0f03066474925245aa.js"],"component---src-pages-404-js":["/component---src-pages-404-js-b618767833eca390e157.js"],"component---src-pages-index-js":["/component---src-pages-index-js-7bd537a600154ccd71fb.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-48fe81595688dbf7a675.js"]};/*]]>*/</script><script src="/polyfill-64742d1bff844b746df5.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-48fe81595688dbf7a675.js" async=""></script><script src="/cd7d5f864fc9e15ed8adef086269b0aeff617554-d47c136faeab099ffc31.js" async=""></script><script src="/commons-d4788fb4c1e9c0e05ba1.js" async=""></script><script src="/styles-7d4153d260c0197f0043.js" async=""></script><script src="/app-0d0f03066474925245aa.js" async=""></script><script src="/framework-8e528b732ab2eaadb7b7.js" async=""></script><script src="/webpack-runtime-1b763c25395a6b55c95d.js" async=""></script></body></html>
